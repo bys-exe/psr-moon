@@ -1,5 +1,7 @@
-import { useRef, useState } from 'react'
+import { Suspense, lazy, useRef, useState } from 'react'
 import './App.css'
+
+const Moon3D = lazy(() => import('./Moon3D.jsx'))
 
 const ACCEPT = '.jpg,.jpeg,.png,.tif,.tiff,.webp'
 const ALLOWED_EXTS = ['.jpg', '.jpeg', '.png', '.tif', '.tiff', '.webp']
@@ -287,23 +289,10 @@ export default function App() {
             </p>
           </div>
 
-          <div className="moon-wrap" aria-label="Demo lunar map with markers">
-            <div className="moon">
-              <div className="crater c1" />
-              <div className="crater c2" />
-              <div className="crater c3" />
-              <div className="crater c4" />
-              <div className="terminator" />
-              <span className="marker m1">
-                <i /> PSR-01
-              </span>
-              <span className="marker m2">
-                <i /> CRATER 04
-              </span>
-              <span className="marker m3">
-                <i /> SHADOW ZONE
-              </span>
-            </div>
+          <div className="moon-wrap" aria-label="Interactive 3D lunar map with markers">
+            <Suspense fallback={<div className="placeholder">Loading 3D moon…</div>}>
+              <Moon3D />
+            </Suspense>
           </div>
         </section>
 
@@ -413,40 +402,45 @@ export default function App() {
                     </div>
                   )}
                   {metrics && (
-                    <table className="metrics">
-                      <caption>Evaluation (paper VII.D) — luminance</caption>
-                      <tbody>
-                        <tr>
-                          <th scope="row">
-                            SNR (Signal-to-Noise Ratio) before → after
-                          </th>
-                          <td>
-                            {metrics.snr_before_db} → {metrics.snr_after_db} dB
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row">PSNR (Peak Signal-to-Noise Ratio)</th>
-                          <td>{metrics.psnr_db} dB</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">
-                            SSIM (Structural Similarity Index)
-                          </th>
-                          <td>{metrics.ssim}</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">
-                            FVI (Feature Visibility Index, proxy)
-                          </th>
-                          <td>{metrics.fvi_proxy}</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <p className="note">
-                      Higher SNR / PSNR means cleaner signal; SSIM near 1.0
-                      means structure was preserved; FVI proxy above 1.0 means
-                      contrast visibility improved.
-                    </p>
+                    <>
+                      <table className="metrics">
+                        <caption>Evaluation (paper VII.D) — luminance</caption>
+                        <tbody>
+                          <tr>
+                            <th scope="row">
+                              SNR (Signal-to-Noise Ratio) before → after
+                            </th>
+                            <td>
+                              {metrics.snr_before_db} → {metrics.snr_after_db}{' '}
+                              dB
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              PSNR (Peak Signal-to-Noise Ratio)
+                            </th>
+                            <td>{metrics.psnr_db} dB</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              SSIM (Structural Similarity Index)
+                            </th>
+                            <td>{metrics.ssim}</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              FVI (Feature Visibility Index, proxy)
+                            </th>
+                            <td>{metrics.fvi_proxy}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p className="note">
+                        Higher SNR / PSNR means cleaner signal; SSIM near 1.0
+                        means structure was preserved; FVI proxy above 1.0 means
+                        contrast visibility improved.
+                      </p>
+                    </>
                   )}
                   {metricsNote && <p className="note">{metricsNote}</p>}
                   {outputInfo?.downscaled && (

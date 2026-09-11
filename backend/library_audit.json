@@ -1,0 +1,2702 @@
+[
+ {
+  "id": "PIA13523",
+  "title": "The Lunar South Pole",
+  "manifest_query": "lunar south pole",
+  "verdict": "keep",
+  "reason": "lunar + dark:pole",
+  "mean_luminance": 46.1,
+  "nasa_title": "The Lunar South Pole"
+ },
+ {
+  "id": "PIA00001",
+  "title": "South Pole Region of the Moon as Seen by Clementine",
+  "manifest_query": "lunar south pole",
+  "verdict": "keep",
+  "reason": "lunar + crater:basin/dark:polar,pole,shadow",
+  "mean_luminance": 81.2,
+  "nasa_title": "South Pole Region of the Moon as Seen by Clementine"
+ },
+ {
+  "id": "PIA00002",
+  "title": "North Pole Region of the Moon as Seen by Clementine",
+  "manifest_query": "lunar south pole",
+  "verdict": "keep",
+  "reason": "lunar + dark:polar,pole,shadow",
+  "mean_luminance": 54.7,
+  "nasa_title": "North Pole Region of the Moon as Seen by Clementine"
+ },
+ {
+  "id": "art002e009283",
+  "title": "Ready for a Close Up",
+  "manifest_query": "lunar south pole",
+  "verdict": "keep",
+  "reason": "lunar + crater:basin,crater/dark:night,pole,shadow,terminator",
+  "mean_luminance": 33.4,
+  "nasa_title": "Ready for a Close Up"
+ },
+ {
+  "id": "PIA00302",
+  "title": "Nearside of Earth's Moon as Seen by the Clementine Spacecraft",
+  "manifest_query": "lunar south pole",
+  "verdict": "keep",
+  "reason": "lunar + crater:basin,mare,maria/dark:dark,farside,pole",
+  "mean_luminance": 59.8,
+  "nasa_title": "Nearside of Earth's Moon as Seen by the Clementine Spacecraft"
+ },
+ {
+  "id": "art002e009006",
+  "title": "art002e009006",
+  "manifest_query": "lunar south pole",
+  "verdict": "keep",
+  "reason": "lunar + crater:basin,crater/dark:far side,pole",
+  "mean_luminance": 4.0,
+  "nasa_title": "art002e009006"
+ },
+ {
+  "id": "art002e012673",
+  "title": "A Terrain of Ancient Impacts",
+  "manifest_query": "moon crater shadow",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:shadow",
+  "mean_luminance": 57.0,
+  "nasa_title": "A Terrain of Ancient Impacts"
+ },
+ {
+  "id": "art002e009281",
+  "title": "Shadows at the Edge of Lunar Day",
+  "manifest_query": "moon crater shadow",
+  "verdict": "keep",
+  "reason": "lunar + crater:basin,crater,highland/dark:night,shadow,terminator",
+  "mean_luminance": 46.8,
+  "nasa_title": "Shadows at the Edge of Lunar Day"
+ },
+ {
+  "id": "art002e019570",
+  "title": "Crescent Moon Ahead of Flyby",
+  "manifest_query": "moon crater shadow",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:crescent,night,shadow,terminator",
+  "mean_luminance": 14.6,
+  "nasa_title": "Crescent Moon Ahead of Flyby"
+ },
+ {
+  "id": "art002e014045",
+  "title": "Along the Lunar Terminator",
+  "manifest_query": "moon crater shadow",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater,highland/dark:night,shadow,terminator",
+  "mean_luminance": 19.3,
+  "nasa_title": "Along the Lunar Terminator"
+ },
+ {
+  "id": "art002e014055",
+  "title": "Craters Along the Lunar Terminator",
+  "manifest_query": "moon crater shadow",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:night,shadow,terminator",
+  "mean_luminance": 28.8,
+  "nasa_title": "Craters Along the Lunar Terminator "
+ },
+ {
+  "id": "art002e009282",
+  "title": "Shadows Across Vavilov Crater",
+  "manifest_query": "moon crater shadow",
+  "verdict": "keep",
+  "reason": "lunar + crater:basin,crater/dark:far side,night,shadow,terminator",
+  "mean_luminance": 55.2,
+  "nasa_title": "Shadows Across Vavilov Crater"
+ },
+ {
+  "id": "art002e020686",
+  "title": "Orientale Basin at the Edge of Light",
+  "manifest_query": "moon crater shadow",
+  "verdict": "keep",
+  "reason": "lunar + crater:basin,crater/dark:farside,night,shadow,terminator",
+  "mean_luminance": 55.1,
+  "nasa_title": "Orientale Basin at the Edge of Light"
+ },
+ {
+  "id": "art002e010014",
+  "title": "Crossing into the Lunar Farside",
+  "manifest_query": "moon crater shadow",
+  "verdict": "keep",
+  "reason": "lunar + crater:basin,crater/dark:farside",
+  "mean_luminance": 96.3,
+  "nasa_title": "Crossing into the Lunar Farside"
+ },
+ {
+  "id": "PIA12892",
+  "title": "Terraced Wall in Bürg Crater",
+  "manifest_query": "lunar reconnaissance orbiter",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater",
+  "mean_luminance": 99.2,
+  "nasa_title": "Terraced Wall in Bürg Crater"
+ },
+ {
+  "id": "PIA12937",
+  "title": "Peary Crater: Greetings from the North Pole of the Moon",
+  "manifest_query": "lunar reconnaissance orbiter",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:pole",
+  "mean_luminance": 32.1,
+  "nasa_title": "Peary Crater: Greetings from the North Pole of the Moon"
+ },
+ {
+  "id": "PIA12902",
+  "title": "Uplift, Boulders of Tsiolkovskiy",
+  "manifest_query": "lunar reconnaissance orbiter",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater",
+  "mean_luminance": 113.7,
+  "nasa_title": "Uplift, Boulders of Tsiolkovskiy"
+ },
+ {
+  "id": "PIA13528",
+  "title": "The Lunar North Pole",
+  "manifest_query": "lunar north pole",
+  "verdict": "keep",
+  "reason": "lunar + dark:pole",
+  "mean_luminance": 61.4,
+  "nasa_title": "The Lunar North Pole"
+ },
+ {
+  "id": "PIA12899",
+  "title": "Eternal Darkness Near the North Pole",
+  "manifest_query": "lunar north pole",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:dark,pole,shadow",
+  "mean_luminance": 5.0,
+  "nasa_title": "Eternal Darkness Near the North Pole"
+ },
+ {
+  "id": "PIA18138",
+  "title": "NASA Releases First Interactive Mosaic of Lunar North Pole",
+  "manifest_query": "lunar north pole",
+  "verdict": "keep",
+  "reason": "lunar + dark:polar,pole",
+  "mean_luminance": 62.4,
+  "nasa_title": "NASA Releases First Interactive Mosaic of Lunar North Pole"
+ },
+ {
+  "id": "GSFC_20171208_Archive_e001857",
+  "title": "New Moon",
+  "manifest_query": "lunar north pole",
+  "verdict": "keep",
+  "reason": "lunar + dark:crescent,eclipse,new moon,shadow,waxing",
+  "mean_luminance": 4.2,
+  "nasa_title": "New Moon"
+ },
+ {
+  "id": "GSFC_20171208_Archive_e001861",
+  "title": "Full Moon",
+  "manifest_query": "lunar north pole",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse,night,shadow",
+  "mean_luminance": 99.1,
+  "nasa_title": "Full Moon"
+ },
+ {
+  "id": "GSFC_20171208_Archive_e001864",
+  "title": "Waxing crescent",
+  "manifest_query": "lunar north pole",
+  "verdict": "keep",
+  "reason": "lunar + dark:crescent,eclipse,shadow,waxing",
+  "mean_luminance": 14.2,
+  "nasa_title": "Waxing crescent"
+ },
+ {
+  "id": "GSFC_20171208_Archive_e001858",
+  "title": "Waning Crescent",
+  "manifest_query": "lunar north pole",
+  "verdict": "keep",
+  "reason": "lunar + dark:crescent,eclipse,shadow,waning",
+  "mean_luminance": 14.0,
+  "nasa_title": "Waning Crescent"
+ },
+ {
+  "id": "GSFC_20171208_Archive_e001859",
+  "title": "Third Quarter",
+  "manifest_query": "lunar north pole",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse,night,shadow",
+  "mean_luminance": 32.6,
+  "nasa_title": "Third Quarter"
+ },
+ {
+  "id": "GSFC_20171208_Archive_e001860",
+  "title": "Waning Gibbous",
+  "manifest_query": "lunar north pole",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse,gibbous,night,shadow,waning",
+  "mean_luminance": 60.8,
+  "nasa_title": "Waning Gibbous"
+ },
+ {
+  "id": "GSFC_20171208_Archive_e001863",
+  "title": "First Quarter",
+  "manifest_query": "lunar north pole",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse,shadow",
+  "mean_luminance": 32.6,
+  "nasa_title": "First Quarter"
+ },
+ {
+  "id": "GSFC_20171208_Archive_e001862",
+  "title": "Waxing Gibbous",
+  "manifest_query": "lunar north pole",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse,gibbous,night,shadow,waxing",
+  "mean_luminance": 58.8,
+  "nasa_title": "Waxing Gibbous"
+ },
+ {
+  "id": "S90-55757",
+  "title": "Western hemisphere of the Moon taken by Galileo spacecraft",
+  "manifest_query": "lunar south pole craters",
+  "verdict": "keep",
+  "reason": "lunar + crater:basin,mare,maria/dark:dark",
+  "mean_luminance": 89.5,
+  "nasa_title": "Western hemisphere of the Moon taken by Galileo spacecraft"
+ },
+ {
+  "id": "as16-121-19407",
+  "title": "Oblique view of rim of Guyot crater on lunar farside as seen by Apollo 16",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater,highland/dark:farside",
+  "mean_luminance": 132.9,
+  "nasa_title": "Oblique view of rim of Guyot crater on lunar farside as seen by Apollo 16"
+ },
+ {
+  "id": "as13-60-8675",
+  "title": "View of the crater on lunar farside from Apollo 13",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater,mare/dark:farside",
+  "mean_luminance": 125.6,
+  "nasa_title": "View of the crater on lunar farside from Apollo 13"
+ },
+ {
+  "id": "as14-72-09975",
+  "title": "Vertical view of inner wall of King Crater on lunar farside",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:farside",
+  "mean_luminance": 175.1,
+  "nasa_title": "Vertical view of inner wall of King Crater on lunar farside"
+ },
+ {
+  "id": "as15-97-13160",
+  "title": "View of crater Tsiolkovsky in highlands on lunar farside as seen by Apollo 15",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater,highland/dark:dark,farside",
+  "mean_luminance": 83.0,
+  "nasa_title": "View of crater Tsiolkovsky in highlands on lunar farside as seen by Apollo 15"
+ },
+ {
+  "id": "as11-42-6285",
+  "title": "View of bright-rayed crater on lunar farside",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:farside",
+  "mean_luminance": 128.0,
+  "nasa_title": "View of bright-rayed crater on lunar farside"
+ },
+ {
+  "id": "S71-44670",
+  "title": "View of crater Tsiolkovsky on lunar farside as photographed by Apollo 15",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater,mare/dark:farside",
+  "mean_luminance": 150.6,
+  "nasa_title": "View of crater Tsiolkovsky on lunar farside as photographed by Apollo 15"
+ },
+ {
+  "id": "as13-60-8659",
+  "title": "View of the lunar farside showing crater Tsiolkovsky from Apollo 13",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:farside",
+  "mean_luminance": 147.8,
+  "nasa_title": "View of the lunar farside showing crater Tsiolkovsky from Apollo 13"
+ },
+ {
+  "id": "as15-97-13168",
+  "title": "View of crater Tsiolkovsky in highlands on lunar farside as seen by Apollo 15",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater,highland/dark:farside",
+  "mean_luminance": 137.3,
+  "nasa_title": "View of crater Tsiolkovsky in highlands on lunar farside as seen by Apollo 15"
+ },
+ {
+  "id": "as10-34-5173",
+  "title": "Apollo 10 photograph of the lunar farside near IAU crater No. 300",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:farside",
+  "mean_luminance": 143.9,
+  "nasa_title": "Apollo 10 photograph of the lunar farside near IAU crater No. 300"
+ },
+ {
+  "id": "as11-43-6412",
+  "title": "Northeasterly, low-oblique view of unnamed crater on lunar farside",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater,highland/dark:farside",
+  "mean_luminance": 155.4,
+  "nasa_title": "Northeasterly, low-oblique view of unnamed crater on lunar farside"
+ },
+ {
+  "id": "as10-31-4650",
+  "title": "Apollo 10 photograph of lunar nearside with crater Hyginus near Central Bay",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater,rille",
+  "mean_luminance": 77.1,
+  "nasa_title": "Apollo 10 photograph of lunar nearside with crater Hyginus near Central Bay"
+ },
+ {
+  "id": "as11-42-6248",
+  "title": "Oblique view of lunar farside in area of IAU crater no. 312",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:farside,shadow",
+  "mean_luminance": 79.2,
+  "nasa_title": "Oblique view of lunar farside in area of IAU crater no. 312"
+ },
+ {
+  "id": "art002e012028",
+  "title": "Ancient Lava on the Moon",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:aristarchus,crater/dark:dark",
+  "mean_luminance": 57.8,
+  "nasa_title": "Ancient Lava on the Moon"
+ },
+ {
+  "id": "as16-120-19237",
+  "title": "Oblique view of lunar nearside photographed from Apollo 16 spacecraft",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater,mare",
+  "mean_luminance": 130.1,
+  "nasa_title": "Oblique view of lunar nearside photographed from Apollo 16 spacecraft"
+ },
+ {
+  "id": "as17-145-22287",
+  "title": "Oblique view of Copernicus crater",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:copernicus,crater",
+  "mean_luminance": 50.8,
+  "nasa_title": "Oblique view of Copernicus crater"
+ },
+ {
+  "id": "as15-88-12002",
+  "title": "Oblique view of lunar nearside near northeast edge of Ocean of Storms",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:aristarchus,crater,rille",
+  "mean_luminance": 110.9,
+  "nasa_title": "Oblique view of lunar nearside near northeast edge of Ocean of Storms"
+ },
+ {
+  "id": "as15-82-11082",
+  "title": "View of portion of \"relatively fresh\" crater as photographed by Apollo 15",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater",
+  "mean_luminance": 130.2,
+  "nasa_title": "View of portion of \"relatively fresh\" crater as photographed by Apollo 15"
+ },
+ {
+  "id": "art002e012261",
+  "title": "A Tapestry of Lunar Landmarks",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:basin,crater,grimaldi,highland/dark:dark",
+  "mean_luminance": 64.9,
+  "nasa_title": "A Tapestry of Lunar Landmarks"
+ },
+ {
+  "id": "art002e012114",
+  "title": "A Cross Section of Lunar Geology",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:aristarchus,crater,grimaldi,mare/dark:dark",
+  "mean_luminance": 73.5,
+  "nasa_title": "A Cross Section of Lunar Geology"
+ },
+ {
+  "id": "as15-91-12366",
+  "title": "View of crater Posidonius at edge of Sea of Serenity seen by Apollo 15",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater",
+  "mean_luminance": 157.0,
+  "nasa_title": "View of crater Posidonius at edge of Sea of Serenity seen by Apollo 15"
+ },
+ {
+  "id": "art002e012090",
+  "title": "The Rings of the Orientale Basin",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:basin,crater",
+  "mean_luminance": 110.1,
+  "nasa_title": "The Rings of the Orientale Basin"
+ },
+ {
+  "id": "as08-14-2506",
+  "title": "Photograph of nearly full moon taken from Apollo 8",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater,highland,mare/dark:dark,farside,terminator",
+  "mean_luminance": 59.7,
+  "nasa_title": "Photograph of nearly full moon taken from Apollo 8"
+ },
+ {
+  "id": "KSC-2009-2989",
+  "title": "KSC-2009-2989",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater",
+  "mean_luminance": 161.6,
+  "nasa_title": "KSC-2009-2989"
+ },
+ {
+  "id": "KSC-2009-2988",
+  "title": "KSC-2009-2988",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater",
+  "mean_luminance": 128.5,
+  "nasa_title": "KSC-2009-2988"
+ },
+ {
+  "id": "KSC-2009-2985",
+  "title": "KSC-2009-2985",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater",
+  "mean_luminance": 150.4,
+  "nasa_title": "KSC-2009-2985"
+ },
+ {
+  "id": "KSC-2009-2984",
+  "title": "KSC-2009-2984",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater",
+  "mean_luminance": 125.0,
+  "nasa_title": "KSC-2009-2984"
+ },
+ {
+  "id": "as12-51-7507",
+  "title": "Apollo 12 Lunar Module, in landing configuration, photographed in lunar orbit",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater",
+  "mean_luminance": 74.2,
+  "nasa_title": "Apollo 12 Lunar Module, in landing configuration, photographed in lunar orbit"
+ },
+ {
+  "id": "as11-37-5458",
+  "title": "View form Lunar Module of surface of the moon near where LM touched down",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater",
+  "mean_luminance": 102.6,
+  "nasa_title": "View form Lunar Module of surface of the moon near where LM touched down"
+ },
+ {
+  "id": "as14-64-9103",
+  "title": "View of field of boulders on flank of Cone Crater",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater",
+  "mean_luminance": 92.4,
+  "nasa_title": "View of field of boulders on flank of Cone Crater"
+ },
+ {
+  "id": "KSC-2009-2990",
+  "title": "KSC-2009-2990",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:shadow",
+  "mean_luminance": 129.2,
+  "nasa_title": "KSC-2009-2990"
+ },
+ {
+  "id": "KSC-2009-2994",
+  "title": "KSC-2009-2994",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:pole,shadow",
+  "mean_luminance": 126.9,
+  "nasa_title": "KSC-2009-2994"
+ },
+ {
+  "id": "KSC-2009-2995",
+  "title": "KSC-2009-2995",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:pole,shadow",
+  "mean_luminance": 125.6,
+  "nasa_title": "KSC-2009-2995"
+ },
+ {
+  "id": "KSC-2009-2993",
+  "title": "KSC-2009-2993",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:pole,shadow",
+  "mean_luminance": 129.8,
+  "nasa_title": "KSC-2009-2993"
+ },
+ {
+  "id": "KSC-2009-2996",
+  "title": "KSC-2009-2996",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:pole,shadow",
+  "mean_luminance": 126.1,
+  "nasa_title": "KSC-2009-2996"
+ },
+ {
+  "id": "as14-64-9118",
+  "title": "View of field of boulders on flank of Cone Crater",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater",
+  "mean_luminance": 85.4,
+  "nasa_title": "View of field of boulders on flank of Cone Crater"
+ },
+ {
+  "id": "as11-43-6439",
+  "title": "Apollo 11 oblique view of lunar farside",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:farside,shadow",
+  "mean_luminance": 134.6,
+  "nasa_title": "Apollo 11 oblique view of lunar farside"
+ },
+ {
+  "id": "as11-37-5445",
+  "title": "Apollo 11 Command/Service modules photographed from Lunar Module in orbit",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater",
+  "mean_luminance": 158.3,
+  "nasa_title": "Apollo 11 Command/Service modules photographed from Lunar Module in orbit"
+ },
+ {
+  "id": "as11-42-6237",
+  "title": "Oblique view of crater Theophilus at northwest edge of Sea of Nectar",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater,mare,theophilus",
+  "mean_luminance": 45.0,
+  "nasa_title": "Oblique view of crater Theophilus at northwest edge of Sea of Nectar"
+ },
+ {
+  "id": "KSC-2009-2992",
+  "title": "KSC-2009-2992",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater",
+  "mean_luminance": 33.9,
+  "nasa_title": "KSC-2009-2992"
+ },
+ {
+  "id": "KSC-2009-2991",
+  "title": "KSC-2009-2991",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater",
+  "mean_luminance": 43.7,
+  "nasa_title": "KSC-2009-2991"
+ },
+ {
+  "id": "KSC-2009-2986",
+  "title": "KSC-2009-2986",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater",
+  "mean_luminance": 136.2,
+  "nasa_title": "KSC-2009-2986"
+ },
+ {
+  "id": "S71-44672",
+  "title": "Crater Paracelsus - Lunar Farside - Apollo XV",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:farside",
+  "mean_luminance": 101.7,
+  "nasa_title": "Crater Paracelsus - Lunar Farside - Apollo XV"
+ },
+ {
+  "id": "as17-145-22285",
+  "title": "View of Eratosthenes and Copernicus craters",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:copernicus,crater",
+  "mean_luminance": 56.3,
+  "nasa_title": "View of Eratosthenes and Copernicus craters"
+ },
+ {
+  "id": "as11-44-6609",
+  "title": "Oblique view of lunar farside photographed from orbit looking southwest",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:farside",
+  "mean_luminance": 75.9,
+  "nasa_title": "Oblique view of lunar farside photographed from orbit looking southwest"
+ },
+ {
+  "id": "as08-13-2327",
+  "title": "Brightly-rayed crater on the farside of the moon near the subsolar point",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:farside",
+  "mean_luminance": 116.6,
+  "nasa_title": "Brightly-rayed crater on the farside of the moon near the subsolar point"
+ },
+ {
+  "id": "KSC-2009-2987",
+  "title": "KSC-2009-2987",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:pole,shadow",
+  "mean_luminance": 90.3,
+  "nasa_title": "KSC-2009-2987"
+ },
+ {
+  "id": "as10-32-4845",
+  "title": "Apollo 10 southwest view of Censorinus crater",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater,highland",
+  "mean_luminance": 132.6,
+  "nasa_title": "Apollo 10 southwest view of Censorinus crater"
+ },
+ {
+  "id": "as11-43-6422",
+  "title": "Apollo 11 oblique view of lunar farside",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:farside",
+  "mean_luminance": 123.3,
+  "nasa_title": "Apollo 11 oblique view of lunar farside"
+ },
+ {
+  "id": "as15-93-12628",
+  "title": "View of Schroter's Valley area as photographed by Apollo 15",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater,rille",
+  "mean_luminance": 82.7,
+  "nasa_title": "View of Schroter's Valley area as photographed by Apollo 15"
+ },
+ {
+  "id": "as10-27-3873",
+  "title": "Apollo 10 Command/Service Modules seen from Lunar Module after separation",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:far side,shadow",
+  "mean_luminance": 116.7,
+  "nasa_title": "Apollo 10 Command/Service Modules seen from Lunar Module after separation"
+ },
+ {
+  "id": "art002e010399",
+  "title": "Craters of Time",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater",
+  "mean_luminance": 85.3,
+  "nasa_title": "Craters of Time"
+ },
+ {
+  "id": "art002e012183",
+  "title": "Capture My Good Side –The Moon",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:basin,crater,grimaldi,mare/dark:dark,far side",
+  "mean_luminance": 44.3,
+  "nasa_title": "Capture My Good Side –The Moon"
+ },
+ {
+  "id": "as12-48-7121",
+  "title": "View of Surveyor III in its crater",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater",
+  "mean_luminance": 72.0,
+  "nasa_title": "View of Surveyor III in its crater"
+ },
+ {
+  "id": "as14-64-9099",
+  "title": "Apollo 14 crewmen photographs field of boulders on flank of Cone Crater",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:shadow",
+  "mean_luminance": 98.0,
+  "nasa_title": "Apollo 14 crewmen photographs field of boulders on flank of Cone Crater"
+ },
+ {
+  "id": "art002e012702",
+  "title": "Poynting and Keeler Craters on the Lunar Far Side",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater,highland/dark:far side",
+  "mean_luminance": 33.0,
+  "nasa_title": "Poynting and Keeler Craters on the Lunar Far Side"
+ },
+ {
+  "id": "as10-27-3908",
+  "title": "Apollo 10 view across Apollo Landing Site 3 in the Central Bay",
+  "manifest_query": "lunar crater",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater",
+  "mean_luminance": 102.3,
+  "nasa_title": "Apollo 10 view across Apollo Landing Site 3 in the Central Bay"
+ },
+ {
+  "id": "art002e009057",
+  "title": "The Nearside of the Moon",
+  "manifest_query": "Tycho crater moon",
+  "verdict": "keep",
+  "reason": "lunar + crater:basin,crater,tycho/dark:dark,far side",
+  "mean_luminance": 13.4,
+  "nasa_title": "The Nearside of the Moon"
+ },
+ {
+  "id": "LRC-1967-B701_P-01194",
+  "title": "Moon Lunar Orbiter-Lunar Orbiter II",
+  "manifest_query": "Copernicus crater moon",
+  "verdict": "keep",
+  "reason": "lunar + crater:copernicus,crater",
+  "mean_luminance": 80.6,
+  "nasa_title": "Moon Lunar Orbiter-Lunar Orbiter II"
+ },
+ {
+  "id": "ARC-1990-A91-2015",
+  "title": "ARC-1990-A91-2015",
+  "manifest_query": "Copernicus crater moon",
+  "verdict": "keep",
+  "reason": "lunar + crater:copernicus,crater,highland,mare/dark:crescent,dark",
+  "mean_luminance": 125.4,
+  "nasa_title": "ARC-1990-A91-2015"
+ },
+ {
+  "id": "0003869",
+  "title": "Microgravity",
+  "manifest_query": "Copernicus crater moon",
+  "verdict": "keep",
+  "reason": "lunar + crater:copernicus,crater",
+  "mean_luminance": 100.0,
+  "nasa_title": "Microgravity"
+ },
+ {
+  "id": "art002e024603",
+  "title": "Hanging in the Balance",
+  "manifest_query": "moon terminator",
+  "verdict": "keep",
+  "reason": "lunar + dark:dark,terminator",
+  "mean_luminance": 56.9,
+  "nasa_title": "Hanging in the Balance"
+ },
+ {
+  "id": "PIA14611",
+  "title": "Line of Craters",
+  "manifest_query": "moon terminator",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:night,terminator",
+  "mean_luminance": 22.4,
+  "nasa_title": "Line of Craters"
+ },
+ {
+  "id": "as08-14-2400",
+  "title": "Apollo 8 Mission image,Moon, farside near terminator",
+  "manifest_query": "moon terminator",
+  "verdict": "keep",
+  "reason": "lunar + dark:farside,terminator",
+  "mean_luminance": 85.2,
+  "nasa_title": "Apollo 8 Mission image,Moon, farside near terminator"
+ },
+ {
+  "id": "as08-13-2329",
+  "title": "Apollo 8 Mission image, Moon with Earth over horizon and T/O 28",
+  "manifest_query": "moon terminator",
+  "verdict": "keep",
+  "reason": "lunar + dark:pole,terminator",
+  "mean_luminance": 54.6,
+  "nasa_title": "Apollo 8 Mission image, Moon with Earth over horizon and T/O 28"
+ },
+ {
+  "id": "PIA26596",
+  "title": "JPL's User Terminal Payload Delivered to Firefly",
+  "manifest_query": "moon terminator",
+  "verdict": "keep",
+  "reason": "lunar + dark:dark",
+  "mean_luminance": 99.4,
+  "nasa_title": "JPL's User Terminal Payload Delivered to Firefly"
+ },
+ {
+  "id": "as08-14-2505",
+  "title": "Apollo 8 Mission image,Moon",
+  "manifest_query": "moon terminator",
+  "verdict": "keep",
+  "reason": "lunar + crater:highland,mare/dark:dark,farside,terminator",
+  "mean_luminance": 77.5,
+  "nasa_title": "Apollo 8 Mission image,Moon"
+ },
+ {
+  "id": "as10-27-3956",
+  "title": "Photograph of moon after transearth insertion",
+  "manifest_query": "moon terminator",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater,mare/dark:dark,terminator",
+  "mean_luminance": 24.6,
+  "nasa_title": "Photograph of moon after transearth insertion"
+ },
+ {
+  "id": "art002e024311",
+  "title": "A View Like Never Before",
+  "manifest_query": "moon terminator",
+  "verdict": "keep",
+  "reason": "lunar + crater:basin/dark:dark,terminator",
+  "mean_luminance": 35.7,
+  "nasa_title": "A View Like Never Before"
+ },
+ {
+  "id": "as08-14-2384",
+  "title": "Apollo 8 Mission image,Earth over the horizon of the moon",
+  "manifest_query": "moon terminator",
+  "verdict": "keep",
+  "reason": "lunar + dark:pole,terminator",
+  "mean_luminance": 16.9,
+  "nasa_title": "Apollo 8 Mission image,Earth over the horizon of the moon"
+ },
+ {
+  "id": "as08-14-2383",
+  "title": "Apollo 8 Mission image, Earth over the horizon of the moon",
+  "manifest_query": "moon terminator",
+  "verdict": "keep",
+  "reason": "lunar + dark:terminator",
+  "mean_luminance": 29.2,
+  "nasa_title": "Apollo 8 Mission image, Earth over the horizon of the moon"
+ },
+ {
+  "id": "ARC-1980-A80-7034",
+  "title": "ARC-1980-A80-7034",
+  "manifest_query": "moon terminator",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater",
+  "mean_luminance": 57.9,
+  "nasa_title": "ARC-1980-A80-7034"
+ },
+ {
+  "id": "PIA26234",
+  "title": "Imaging Io's Volcanos With JunoCam",
+  "manifest_query": "moon terminator",
+  "verdict": "keep",
+  "reason": "lunar + dark:night,polar,terminator",
+  "mean_luminance": 15.3,
+  "nasa_title": " Imaging Io's Volcanos With JunoCam"
+ },
+ {
+  "id": "PIA23739",
+  "title": "A Candidate Landing Site in Utopia Planitia",
+  "manifest_query": "moon terminator",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater",
+  "mean_luminance": 130.8,
+  "nasa_title": "A Candidate Landing Site in Utopia Planitia"
+ },
+ {
+  "id": "GSFC_20171208_Archive_e000868",
+  "title": "Full Moon",
+  "manifest_query": "moon terminator",
+  "verdict": "keep",
+  "reason": "lunar + dark:night,shadow,terminator",
+  "mean_luminance": 84.8,
+  "nasa_title": "Full Moon"
+ },
+ {
+  "id": "GSFC_20171208_Archive_e000870",
+  "title": "Third Quarter",
+  "manifest_query": "moon terminator",
+  "verdict": "keep",
+  "reason": "lunar + dark:night,shadow,terminator",
+  "mean_luminance": 34.5,
+  "nasa_title": "Third Quarter"
+ },
+ {
+  "id": "GSFC_20171208_Archive_e000865",
+  "title": "Waxing Crescent",
+  "manifest_query": "moon terminator",
+  "verdict": "keep",
+  "reason": "lunar + dark:crescent,night,shadow,terminator,waxing",
+  "mean_luminance": 14.3,
+  "nasa_title": "Waxing Crescent"
+ },
+ {
+  "id": "PIA17416",
+  "title": "A Glowing Crescent Moon",
+  "manifest_query": "crescent moon",
+  "verdict": "keep",
+  "reason": "lunar + dark:crescent",
+  "mean_luminance": 32.0,
+  "nasa_title": "A Glowing Crescent Moon"
+ },
+ {
+  "id": "iss043e039312",
+  "title": "Crescent Moon set sequence",
+  "manifest_query": "crescent moon",
+  "verdict": "keep",
+  "reason": "lunar + dark:crescent",
+  "mean_luminance": 14.8,
+  "nasa_title": "Crescent Moon set sequence"
+ },
+ {
+  "id": "iss071e256627",
+  "title": "A Waning Crescent Moon Above Italy",
+  "manifest_query": "crescent moon",
+  "verdict": "keep",
+  "reason": "lunar + dark:crescent,waning",
+  "mean_luminance": 0.8,
+  "nasa_title": "A Waning Crescent Moon Above Italy"
+ },
+ {
+  "id": "iss006e48519",
+  "title": "View of the crescent moon during Expedition Six",
+  "manifest_query": "crescent moon",
+  "verdict": "keep",
+  "reason": "lunar + dark:crescent",
+  "mean_luminance": 6.9,
+  "nasa_title": "View of the crescent moon during Expedition Six"
+ },
+ {
+  "id": "iss071e407666",
+  "title": "A waning crescent moon hangs against the black of space",
+  "manifest_query": "crescent moon",
+  "verdict": "keep",
+  "reason": "lunar + dark:crescent,waning",
+  "mean_luminance": 1.0,
+  "nasa_title": "A waning crescent moon hangs against the black of space"
+ },
+ {
+  "id": "iss073e0118626",
+  "title": "The waning crescent Moon above Earth's horizon",
+  "manifest_query": "crescent moon",
+  "verdict": "keep",
+  "reason": "lunar + dark:crescent,night,waning",
+  "mean_luminance": 8.9,
+  "nasa_title": "The waning crescent Moon above Earth's horizon"
+ },
+ {
+  "id": "art002e009286",
+  "title": "Peeking at the Earth",
+  "manifest_query": "crescent moon",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:crescent,dark,night",
+  "mean_luminance": 56.7,
+  "nasa_title": "Peeking at the Earth"
+ },
+ {
+  "id": "art002e021110",
+  "title": "Capturing the Details of the Moon and the Beauty of Earth",
+  "manifest_query": "crescent moon",
+  "verdict": "keep",
+  "reason": "lunar + dark:crescent,dark,night",
+  "mean_luminance": 25.5,
+  "nasa_title": "Capturing the Details of the Moon and the Beauty of Earth"
+ },
+ {
+  "id": "iss074e0460378",
+  "title": "The waning crescent Moon is pictured from the International Space Station",
+  "manifest_query": "crescent moon",
+  "verdict": "keep",
+  "reason": "lunar + dark:crescent,waning",
+  "mean_luminance": 1.3,
+  "nasa_title": "The waning crescent Moon is pictured from the International Space Station"
+ },
+ {
+  "id": "PIA19649",
+  "title": "Departing Dione",
+  "manifest_query": "crescent moon",
+  "verdict": "keep",
+  "reason": "lunar + dark:crescent",
+  "mean_luminance": 8.7,
+  "nasa_title": "Departing Dione"
+ },
+ {
+  "id": "art002e016354",
+  "title": "Artemis II Lunar Crescent View",
+  "manifest_query": "crescent moon",
+  "verdict": "keep",
+  "reason": "lunar + dark:crescent",
+  "mean_luminance": 1.3,
+  "nasa_title": "Artemis II Lunar Crescent View"
+ },
+ {
+  "id": "art002e016277",
+  "title": "Orion, the Moon, Earth",
+  "manifest_query": "crescent moon",
+  "verdict": "keep",
+  "reason": "lunar + dark:crescent,waxing",
+  "mean_luminance": 40.8,
+  "nasa_title": "Orion, the Moon, Earth"
+ },
+ {
+  "id": "art002e009567",
+  "title": "Orion POV: Destination and Home",
+  "manifest_query": "crescent moon",
+  "verdict": "keep",
+  "reason": "lunar + dark:crescent,waxing",
+  "mean_luminance": 40.7,
+  "nasa_title": "Orion POV: Destination and Home"
+ },
+ {
+  "id": "art002e016281",
+  "title": "Orion Seen with the Moon and Earth",
+  "manifest_query": "crescent moon",
+  "verdict": "keep",
+  "reason": "lunar + dark:crescent,waxing",
+  "mean_luminance": 40.8,
+  "nasa_title": "Orion Seen with the Moon and Earth"
+ },
+ {
+  "id": "MAF_20230830_SuperBlueMoon1",
+  "title": "Super Blue Moon Rises Over City of New Orleans",
+  "manifest_query": "crescent moon",
+  "verdict": "keep",
+  "reason": "lunar + dark:crescent",
+  "mean_luminance": 54.4,
+  "nasa_title": "Super Blue Moon Rises Over City of New Orleans "
+ },
+ {
+  "id": "iss061e112503",
+  "title": "iss061e112503",
+  "manifest_query": "crescent moon",
+  "verdict": "keep",
+  "reason": "lunar + dark:crescent,waxing",
+  "mean_luminance": 60.3,
+  "nasa_title": "iss061e112503"
+ },
+ {
+  "id": "iss068e006913",
+  "title": "iss068e006913",
+  "manifest_query": "crescent moon",
+  "verdict": "keep",
+  "reason": "lunar + dark:crescent,waxing",
+  "mean_luminance": 1.8,
+  "nasa_title": "iss068e006913"
+ },
+ {
+  "id": "art002e015231",
+  "title": "Crescent Earth Over Lunar Horizon",
+  "manifest_query": "crescent moon",
+  "verdict": "keep",
+  "reason": "lunar + dark:crescent,far side,farside",
+  "mean_luminance": 9.4,
+  "nasa_title": "Crescent Earth Over Lunar Horizon"
+ },
+ {
+  "id": "art002e021169",
+  "title": "Moments before LOS",
+  "manifest_query": "crescent moon",
+  "verdict": "keep",
+  "reason": "lunar + dark:crescent,far side",
+  "mean_luminance": 15.3,
+  "nasa_title": "Moments before LOS"
+ },
+ {
+  "id": "iss072e116495",
+  "title": "iss072e116495",
+  "manifest_query": "crescent moon",
+  "verdict": "keep",
+  "reason": "lunar + dark:crescent,waning",
+  "mean_luminance": 1.8,
+  "nasa_title": "iss072e116495"
+ },
+ {
+  "id": "MAF_20210526_SuperFlowerMoon12",
+  "title": "Super Flower Blood Moon over New Orleans",
+  "manifest_query": "crescent moon",
+  "verdict": "keep",
+  "reason": "lunar + dark:crescent,eclipse",
+  "mean_luminance": 44.3,
+  "nasa_title": "Super Flower Blood Moon over New Orleans"
+ },
+ {
+  "id": "iss068e004256",
+  "title": "iss068e004256",
+  "manifest_query": "crescent moon",
+  "verdict": "keep",
+  "reason": "lunar + dark:crescent,waxing",
+  "mean_luminance": 28.4,
+  "nasa_title": "iss068e004256"
+ },
+ {
+  "id": "iss066e086973",
+  "title": "iss066e086973",
+  "manifest_query": "crescent moon",
+  "verdict": "keep",
+  "reason": "lunar + dark:crescent,waxing",
+  "mean_luminance": 31.6,
+  "nasa_title": "iss066e086973"
+ },
+ {
+  "id": "s131e011411",
+  "title": "Lunar Observations",
+  "manifest_query": "crescent moon",
+  "verdict": "keep",
+  "reason": "lunar + dark:crescent",
+  "mean_luminance": 10.1,
+  "nasa_title": "Lunar Observations"
+ },
+ {
+  "id": "MAF_20210526_SuperFlowerMoon10",
+  "title": "Super Flower Blood Moon over New Orleans",
+  "manifest_query": "crescent moon",
+  "verdict": "keep",
+  "reason": "lunar + dark:crescent,eclipse",
+  "mean_luminance": 59.8,
+  "nasa_title": "Super Flower Blood Moon over New Orleans"
+ },
+ {
+  "id": "iss066e086969",
+  "title": "iss066e086969",
+  "manifest_query": "crescent moon",
+  "verdict": "keep",
+  "reason": "lunar + dark:crescent,waxing",
+  "mean_luminance": 32.4,
+  "nasa_title": "iss066e086969"
+ },
+ {
+  "id": "iss067e035826",
+  "title": "iss067e035826",
+  "manifest_query": "crescent moon",
+  "verdict": "keep",
+  "reason": "lunar + dark:crescent,waning",
+  "mean_luminance": 26.0,
+  "nasa_title": "iss067e035826"
+ },
+ {
+  "id": "iss040e005986",
+  "title": "Moon and Earths horizon",
+  "manifest_query": "crescent moon",
+  "verdict": "keep",
+  "reason": "lunar + dark:crescent,night",
+  "mean_luminance": 8.1,
+  "nasa_title": "Moon and Earths horizon"
+ },
+ {
+  "id": "iss036e006147",
+  "title": "View of the Moon taken during the Expedition 36 mission",
+  "manifest_query": "crescent moon",
+  "verdict": "keep",
+  "reason": "lunar + dark:crescent",
+  "mean_luminance": 0.5,
+  "nasa_title": "View of the Moon taken during the Expedition 36 mission"
+ },
+ {
+  "id": "iss067e106982",
+  "title": "iss067e106982",
+  "manifest_query": "crescent moon",
+  "verdict": "keep",
+  "reason": "lunar + dark:crescent,waxing",
+  "mean_luminance": 29.5,
+  "nasa_title": "iss067e106982"
+ },
+ {
+  "id": "iss065e112847",
+  "title": "iss065e112847",
+  "manifest_query": "crescent moon",
+  "verdict": "keep",
+  "reason": "lunar + dark:crescent,waxing",
+  "mean_luminance": 64.1,
+  "nasa_title": "iss065e112847"
+ },
+ {
+  "id": "201012210001HQ",
+  "title": "Total Lunar Eclipse",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse,shadow",
+  "mean_luminance": 14.0,
+  "nasa_title": "Total Lunar Eclipse"
+ },
+ {
+  "id": "201012210002HQ",
+  "title": "Total Lunar Eclipse",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse,shadow",
+  "mean_luminance": 1.2,
+  "nasa_title": "Total Lunar Eclipse"
+ },
+ {
+  "id": "201012210003HQ",
+  "title": "Total Lunar Eclipse",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse,shadow",
+  "mean_luminance": 1.6,
+  "nasa_title": "Total Lunar Eclipse"
+ },
+ {
+  "id": "201012210004HQ",
+  "title": "Total Lunar Eclipse",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse,shadow",
+  "mean_luminance": 39.0,
+  "nasa_title": "Total Lunar Eclipse"
+ },
+ {
+  "id": "GRC-2024-C-10128",
+  "title": "Supermoon Lunar Eclipse",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 10.7,
+  "nasa_title": "Supermoon Lunar Eclipse"
+ },
+ {
+  "id": "GRC-2025-C-01605",
+  "title": "Total Lunar Eclipse & Blood Moon 2025",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 5.6,
+  "nasa_title": "Total Lunar Eclipse & Blood Moon 2025"
+ },
+ {
+  "id": "MAF_20260303_LunarEclipse-comp",
+  "title": "Total Lunar Eclipse 2026 – New Orleans",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:dark,eclipse,shadow",
+  "mean_luminance": 21.9,
+  "nasa_title": "Total Lunar Eclipse 2026 – New Orleans"
+ },
+ {
+  "id": "GRC-2025-C-01619",
+  "title": "Total Lunar Eclipse and Bloodmoon 2025",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 5.7,
+  "nasa_title": "Total Lunar Eclipse and Bloodmoon 2025"
+ },
+ {
+  "id": "NHQ202211080005",
+  "title": "Total Lunar Eclipse",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 13.9,
+  "nasa_title": "Total Lunar Eclipse"
+ },
+ {
+  "id": "NHQ202211080006",
+  "title": "Total Lunar Eclipse",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 1.3,
+  "nasa_title": "Total Lunar Eclipse"
+ },
+ {
+  "id": "NHQ202211080007",
+  "title": "Total Lunar Eclipse",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 11.0,
+  "nasa_title": "Total Lunar Eclipse"
+ },
+ {
+  "id": "GRC-2025-C-01613",
+  "title": "Total Lunar Eclipse & Blood Moon 2025",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 22.7,
+  "nasa_title": "Total Lunar Eclipse & Blood Moon 2025"
+ },
+ {
+  "id": "GRC-2025-C-01617",
+  "title": "Total Lunar Eclipse & Blood Moon 2025",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 17.8,
+  "nasa_title": "Total Lunar Eclipse & Blood Moon 2025"
+ },
+ {
+  "id": "GRC-2025-C-01616",
+  "title": "Total Lunar Eclipse & Blood Moon 2025",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 12.6,
+  "nasa_title": "Total Lunar Eclipse & Blood Moon 2025"
+ },
+ {
+  "id": "GRC-2025-C-01618",
+  "title": "Total Lunar Eclipse & Blood Moon 2025",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 21.1,
+  "nasa_title": "Total Lunar Eclipse & Blood Moon 2025"
+ },
+ {
+  "id": "GRC-2025-C-01609",
+  "title": "Total Lunar Eclipse & Blood Moon 2025",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 5.6,
+  "nasa_title": "Total Lunar Eclipse & Blood Moon 2025"
+ },
+ {
+  "id": "GRC-2025-C-01614",
+  "title": "Total Lunar Eclipse & Blood Moon 2025",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 2.4,
+  "nasa_title": "Total Lunar Eclipse & Blood Moon 2025"
+ },
+ {
+  "id": "GRC-2025-C-01606",
+  "title": "Total Lunar Eclipse & Blood Moon 2025",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 20.5,
+  "nasa_title": "Total Lunar Eclipse & Blood Moon 2025"
+ },
+ {
+  "id": "GRC-2025-C-01612",
+  "title": "Total Lunar Eclipse & Blood Moon 2025",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 20.3,
+  "nasa_title": "Total Lunar Eclipse & Blood Moon 2025"
+ },
+ {
+  "id": "GRC-2025-C-01610",
+  "title": "Total Lunar Eclipse & Blood Moon 2025",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 3.1,
+  "nasa_title": "Total Lunar Eclipse & Blood Moon 2025"
+ },
+ {
+  "id": "GRC-2025-C-01615",
+  "title": "Total Lunar Eclipse & Blood Moon 2025",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 5.2,
+  "nasa_title": "Total Lunar Eclipse & Blood Moon 2025"
+ },
+ {
+  "id": "GRC-2025-C-01607",
+  "title": "Total Lunar Eclipse & Blood Moon 2025",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 17.0,
+  "nasa_title": "Total Lunar Eclipse & Blood Moon 2025"
+ },
+ {
+  "id": "GRC-2025-C-01611",
+  "title": "Total Lunar Eclipse & Blood Moon 2025",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 19.0,
+  "nasa_title": "Total Lunar Eclipse & Blood Moon 2025"
+ },
+ {
+  "id": "GRC-2025-C-01608",
+  "title": "Total Lunar Eclipse & Blood Moon 2025",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 11.1,
+  "nasa_title": "Total Lunar Eclipse & Blood Moon 2025"
+ },
+ {
+  "id": "MAF_20260303_LunarEclipse_03",
+  "title": "Total Lunar Eclipse 2026 – New Orleans",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:dark,eclipse,shadow",
+  "mean_luminance": 30.0,
+  "nasa_title": "Total Lunar Eclipse 2026 – New Orleans"
+ },
+ {
+  "id": "MAF_20260303_LunarEclipse_01",
+  "title": "Total Lunar Eclipse 2026 – New Orleans",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:dark,eclipse,shadow",
+  "mean_luminance": 6.7,
+  "nasa_title": "Total Lunar Eclipse 2026 – New Orleans"
+ },
+ {
+  "id": "SSC-20180131-s00030",
+  "title": "Lunar Eclipse Over A-1 Test Stand",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 44.4,
+  "nasa_title": "Lunar Eclipse Over A-1 Test Stand"
+ },
+ {
+  "id": "MAF_20250314_BloodMoonEclipse02",
+  "title": "Blood Moon Lunar Eclipse 2025",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 34.6,
+  "nasa_title": "Blood Moon Lunar Eclipse 2025"
+ },
+ {
+  "id": "MAF_20250314_BloodMoonEclipse03",
+  "title": "Blood Moon Lunar Eclipse 2025",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 25.5,
+  "nasa_title": "Blood Moon Lunar Eclipse 2025"
+ },
+ {
+  "id": "NHQ202211080009",
+  "title": "Total Lunar Eclipse",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 65.9,
+  "nasa_title": "Total Lunar Eclipse"
+ },
+ {
+  "id": "MAF_20250314_BloodMoonEclipse01",
+  "title": "Blood Moon Lunar Eclipse 2025",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse,shadow",
+  "mean_luminance": 20.9,
+  "nasa_title": "Blood Moon Lunar Eclipse 2025"
+ },
+ {
+  "id": "MAF_20220515_LunarEclipse01",
+  "title": "Flower Moon lunar eclipse 2022",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 47.5,
+  "nasa_title": "Flower Moon lunar eclipse 2022"
+ },
+ {
+  "id": "GRC-2025-C-01603",
+  "title": "Total Lunar Eclipse and Blood Moon",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 14.9,
+  "nasa_title": "Total Lunar Eclipse and Blood Moon "
+ },
+ {
+  "id": "MAF_20260827_LunarEclipse_02",
+  "title": "August Lunar Eclipse Rises Over Louisiana",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:dark,eclipse,shadow",
+  "mean_luminance": 6.0,
+  "nasa_title": "August Lunar Eclipse Rises Over Louisiana"
+ },
+ {
+  "id": "MAF_20260827_LunarEclipse_03",
+  "title": "August Lunar Eclipse Rises Over Louisiana",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:dark,eclipse,shadow",
+  "mean_luminance": 13.4,
+  "nasa_title": "August Lunar Eclipse Rises Over Louisiana"
+ },
+ {
+  "id": "MAF_20260827_LunarEclipse_01",
+  "title": "August Lunar Eclipse Rises Over Louisiana",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:dark,eclipse,shadow",
+  "mean_luminance": 15.3,
+  "nasa_title": "August Lunar Eclipse Rises Over Louisiana"
+ },
+ {
+  "id": "MAF_20260827_LunarEclipse_04",
+  "title": "August Lunar Eclipse Rises Over Louisiana",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:dark,eclipse,shadow",
+  "mean_luminance": 5.6,
+  "nasa_title": "August Lunar Eclipse Rises Over Louisiana"
+ },
+ {
+  "id": "MAF_20260827_LunarEclipse_05",
+  "title": "August Lunar Eclipse Rises Over Louisiana",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:dark,eclipse,shadow",
+  "mean_luminance": 14.4,
+  "nasa_title": "August Lunar Eclipse Rises Over Louisiana"
+ },
+ {
+  "id": "MAF_20250314_LunarEclipse_composite",
+  "title": "Blood Moon lunar eclipse 2025",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 21.4,
+  "nasa_title": "Blood Moon lunar eclipse 2025"
+ },
+ {
+  "id": "KSC-03pd3082",
+  "title": "Lunar Eclipse",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:dark,eclipse,shadow",
+  "mean_luminance": 18.0,
+  "nasa_title": "Lunar Eclipse"
+ },
+ {
+  "id": "S71-58222",
+  "title": "Apollo 15 Lunar eclipse views",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse,shadow",
+  "mean_luminance": 107.9,
+  "nasa_title": "Apollo 15 Lunar eclipse views"
+ },
+ {
+  "id": "NHQ202211080001",
+  "title": "Total Lunar Eclipse",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 69.8,
+  "nasa_title": "Total Lunar Eclipse"
+ },
+ {
+  "id": "NHQ202211080004",
+  "title": "Total Lunar Eclipse",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 94.2,
+  "nasa_title": "Total Lunar Eclipse"
+ },
+ {
+  "id": "NHQ202211080008",
+  "title": "Total Lunar Eclipse",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 62.4,
+  "nasa_title": "Total Lunar Eclipse"
+ },
+ {
+  "id": "NHQ202211080003",
+  "title": "Total Lunar Eclipse",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 85.1,
+  "nasa_title": "Total Lunar Eclipse"
+ },
+ {
+  "id": "NHQ202211080002",
+  "title": "Total Lunar Eclipse",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 55.0,
+  "nasa_title": "Total Lunar Eclipse"
+ },
+ {
+  "id": "GSFC_20171208_Archive_e001357",
+  "title": "Lunar Umbra (solar eclipse shadow) over western Africa",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse,shadow",
+  "mean_luminance": 96.6,
+  "nasa_title": "Lunar Umbra (solar eclipse shadow) over western Africa"
+ },
+ {
+  "id": "GSFC_20171208_Archive_e001356",
+  "title": "Lunar Umbra (solar eclipse shadow) over western Africa",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse,shadow",
+  "mean_luminance": 96.4,
+  "nasa_title": "Lunar Umbra (solar eclipse shadow) over western Africa"
+ },
+ {
+  "id": "AFRC2018-0020-02",
+  "title": "Image shows January 31 Super Blue Blood Moon starting the lunar eclipse over NASA Armstrong Flight Research Center's mission support building located in California.",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse,shadow",
+  "mean_luminance": 22.4,
+  "nasa_title": "Image shows January 31 Super Blue Blood Moon starting the lunar eclipse over NASA Armstrong Flight Research Center's mission support building located in California."
+ },
+ {
+  "id": "art002e009302",
+  "title": "Eclipse Safety First",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 73.9,
+  "nasa_title": "Eclipse Safety First"
+ },
+ {
+  "id": "AFRC2018-0020-07",
+  "title": "Image shows Trona Pinnacles near California's NASA Armstrong Flight Research Center during Jan. 31 Super Blue Blood Moon. Trona Pinnacles is an unusual geological feature of the state's Desert National Conservation.",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse,shadow",
+  "mean_luminance": 32.2,
+  "nasa_title": "Image shows Trona Pinnacles near California's NASA Armstrong Flight Research Center during Jan. 31 Super Blue Blood Moon. Trona Pinnacles is an unusual geological feature of the state's Desert National Conservation."
+ },
+ {
+  "id": "AFRC2018-0020-08",
+  "title": "Image shows Trona Pinnacles near California’s NASA Armstrong Flight Research Center during Jan. 31 Super Blue Blood Moon. Trona Pinnacles is an unusual geological feature of the state’s Desert National Conservation.",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse,shadow",
+  "mean_luminance": 136.7,
+  "nasa_title": "Image shows Trona Pinnacles near California’s NASA Armstrong Flight Research Center during Jan. 31 Super Blue Blood Moon. Trona Pinnacles is an unusual geological feature of the state’s Desert National Conservation."
+ },
+ {
+  "id": "AFRC2018-0020-09",
+  "title": "Image shows Trona Pinnacles near California’s NASA Armstrong Flight Research Center during Jan. 31 Super Blue Blood Moon. Trona Pinnacles is an unusual geological feature of the state’s Desert National Conservation.",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse,shadow",
+  "mean_luminance": 130.4,
+  "nasa_title": "Image shows Trona Pinnacles near California’s NASA Armstrong Flight Research Center during Jan. 31 Super Blue Blood Moon. Trona Pinnacles is an unusual geological feature of the state’s Desert National Conservation."
+ },
+ {
+  "id": "GRC-2024-C-10126",
+  "title": "Guardians of Traffic Supermoon",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 19.2,
+  "nasa_title": "Guardians of Traffic Supermoon"
+ },
+ {
+  "id": "GRC-2025-C-01602",
+  "title": "Blood Moon and Lunar Eclipse",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 5.9,
+  "nasa_title": "Blood Moon and Lunar Eclipse"
+ },
+ {
+  "id": "GRC-2025-C-01604",
+  "title": "Lunar Eclipse and Blood Moon",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 17.6,
+  "nasa_title": "Lunar Eclipse and Blood Moon"
+ },
+ {
+  "id": "iss073e0611610",
+  "title": "The lunar eclipse, also known as the Blood Moon, above Earth's horizon",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 73.9,
+  "nasa_title": "The lunar eclipse, also known as the Blood Moon, above Earth's horizon"
+ },
+ {
+  "id": "iss073e0611600",
+  "title": "The lunar eclipse, also known as the Blood Moon, above Earth's horizon",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 21.5,
+  "nasa_title": "The lunar eclipse, also known as the Blood Moon, above Earth's horizon"
+ },
+ {
+  "id": "GRC-2024-C-10125",
+  "title": "Supermoon",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 28.2,
+  "nasa_title": "Supermoon"
+ },
+ {
+  "id": "GRC-2024-C-10127",
+  "title": "Guardians of Traffic Supermoon",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 17.0,
+  "nasa_title": "Guardians of Traffic Supermoon"
+ },
+ {
+  "id": "GRC-2024-C-10124",
+  "title": "Guardians of Traffic Supermoon",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 22.1,
+  "nasa_title": "Guardians of Traffic Supermoon"
+ },
+ {
+  "id": "AFRC2018-0020-06_Composite",
+  "title": "Image is NASA Armstrong Flight Research Center’s mission support building with a composite of 16 images of the eclipsed moons overhead during Jan. 31 Super Blue Blood Moon.",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse,shadow",
+  "mean_luminance": 49.5,
+  "nasa_title": "Image is NASA Armstrong Flight Research Center’s mission support building with a composite of 16 images of the eclipsed moons overhead during Jan. 31 Super Blue Blood Moon."
+ },
+ {
+  "id": "art002e009299",
+  "title": "Solar Eclipse Emergence from Orion",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:dark,eclipse",
+  "mean_luminance": 6.3,
+  "nasa_title": "Solar Eclipse Emergence from Orion"
+ },
+ {
+  "id": "AFRC2018-0020-01",
+  "title": "NASA photographer captures Super Blue Blood Moon beginning its eclipse January 31 from NASA's Armstrong Flight Research Center on the West Coast.",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse,shadow",
+  "mean_luminance": 3.2,
+  "nasa_title": "NASA photographer captures Super Blue Blood Moon beginning its eclipse January 31 from NASA's Armstrong Flight Research Center on the West Coast."
+ },
+ {
+  "id": "KSC-03pd3081",
+  "title": "KENNEDY SPACE CENTER, FLA. - The start of a lunar eclipse is viewed from Merritt Island, Fla.  Eclipses occur when the Sun, Earth and Moon line up. They are rare because the Moon usually passes above or below the imaginary line connecting Earth and the Sun. The Earth casts a shadow that the Moon can pass through - when it does, it is called a lunar eclipse.",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse,shadow",
+  "mean_luminance": 20.8,
+  "nasa_title": "KENNEDY SPACE CENTER, FLA. - The start of a lunar eclipse is viewed from Merritt Island, Fla.  Eclipses occur when the Sun, Earth and Moon line up. They are rare because the Moon usually passes above or below the imaginary line connecting Earth and the Sun. The Earth casts a shadow that the Moon can pass through - when it does, it is called a lunar eclipse."
+ },
+ {
+  "id": "art002e009298",
+  "title": "Artemis II Total Solar Eclipse, Partial Frame",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:dark,eclipse",
+  "mean_luminance": 15.8,
+  "nasa_title": "Artemis II Total Solar Eclipse, Partial Frame"
+ },
+ {
+  "id": "art002e009301",
+  "title": "Artemis II in Eclipse",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:dark,eclipse",
+  "mean_luminance": 22.6,
+  "nasa_title": "Artemis II in Eclipse"
+ },
+ {
+  "id": "KSC-00pp0094",
+  "title": "KSC-00pp0094",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:dark,eclipse,shadow",
+  "mean_luminance": 14.7,
+  "nasa_title": "KSC-00pp0094"
+ },
+ {
+  "id": "KSC-00pp0091",
+  "title": "KSC-00pp0091",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:dark,eclipse,shadow",
+  "mean_luminance": 32.1,
+  "nasa_title": "KSC-00pp0091"
+ },
+ {
+  "id": "KSC-00pp0092",
+  "title": "KSC-00pp0092",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:dark,eclipse,shadow",
+  "mean_luminance": 20.3,
+  "nasa_title": "KSC-00pp0092"
+ },
+ {
+  "id": "KSC-00pp0093",
+  "title": "KSC-00pp0093",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:dark,eclipse,shadow",
+  "mean_luminance": 11.5,
+  "nasa_title": "KSC-00pp0093"
+ },
+ {
+  "id": "jsc2018e003239_alt",
+  "title": "jsc2018e003239_alt",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 11.2,
+  "nasa_title": "jsc2018e003239_alt"
+ },
+ {
+  "id": "KSC-00pp0096",
+  "title": "KSC-00pp0096",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:dark,eclipse,night,shadow",
+  "mean_luminance": 19.2,
+  "nasa_title": "KSC-00pp0096"
+ },
+ {
+  "id": "KSC-00pp0095",
+  "title": "KSC-00pp0095",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:dark,eclipse,shadow",
+  "mean_luminance": 25.9,
+  "nasa_title": "KSC-00pp0095"
+ },
+ {
+  "id": "GRC-2024-C-10115",
+  "title": "Supermoon",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 40.2,
+  "nasa_title": "Supermoon"
+ },
+ {
+  "id": "GRC-2024-C-10116",
+  "title": "Supermoon",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 24.2,
+  "nasa_title": "Supermoon"
+ },
+ {
+  "id": "GRC-2024-C-10108",
+  "title": "Supermoon",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 25.8,
+  "nasa_title": "Supermoon"
+ },
+ {
+  "id": "GRC-2024-C-10111",
+  "title": "Supermoon",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 35.0,
+  "nasa_title": "Supermoon"
+ },
+ {
+  "id": "GRC-2024-C-10114",
+  "title": "Supermoon",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 40.2,
+  "nasa_title": "Supermoon"
+ },
+ {
+  "id": "KSC-03pd3083",
+  "title": "KSC-03pd3083",
+  "manifest_query": "lunar eclipse",
+  "verdict": "keep",
+  "reason": "lunar + dark:dark,eclipse,shadow",
+  "mean_luminance": 14.4,
+  "nasa_title": "KSC-03pd3083"
+ },
+ {
+  "id": "iss069e051764",
+  "title": "The First Full Moon of August",
+  "manifest_query": "full moon",
+  "verdict": "keep",
+  "reason": "lunar + dark:night",
+  "mean_luminance": 1.8,
+  "nasa_title": "The First Full Moon of August"
+ },
+ {
+  "id": "PIA07763",
+  "title": "Rhea: Full Moon",
+  "manifest_query": "full moon",
+  "verdict": "keep",
+  "reason": "lunar + crater:basin,crater",
+  "mean_luminance": 114.5,
+  "nasa_title": "Rhea: Full Moon"
+ },
+ {
+  "id": "as17-152-23311",
+  "title": "Full disc of moon photographed by Apollo 17 crewmen during transearth coast",
+  "manifest_query": "full moon",
+  "verdict": "keep",
+  "reason": "lunar + crater:mare",
+  "mean_luminance": 65.2,
+  "nasa_title": "Full disc of moon photographed by Apollo 17 crewmen during transearth coast"
+ },
+ {
+  "id": "as13-60-8703",
+  "title": "View of near full Moon photographed by Apollo 13 during transearth journey",
+  "manifest_query": "full moon",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater,langrenus",
+  "mean_luminance": 83.7,
+  "nasa_title": "View of near full Moon photographed by Apollo 13 during transearth journey"
+ },
+ {
+  "id": "201103190001HQ",
+  "title": "Perigee Moon",
+  "manifest_query": "full moon",
+  "verdict": "keep",
+  "reason": "lunar + dark:night",
+  "mean_luminance": 52.0,
+  "nasa_title": "Perigee Moon"
+ },
+ {
+  "id": "201103190002HQ",
+  "title": "Super Moon Rises",
+  "manifest_query": "full moon",
+  "verdict": "keep",
+  "reason": "lunar + dark:night",
+  "mean_luminance": 24.4,
+  "nasa_title": "Super Moon Rises"
+ },
+ {
+  "id": "as08-17-2670",
+  "title": "Near vertical view of lunar farside taken from Apollo 8 spacecraft",
+  "manifest_query": "lunar farside",
+  "verdict": "keep",
+  "reason": "lunar + dark:farside",
+  "mean_luminance": 71.0,
+  "nasa_title": "Near vertical view of lunar farside taken from Apollo 8 spacecraft"
+ },
+ {
+  "id": "GSFC_20171208_Archive_e001939",
+  "title": "The Far Side of the Moon -- And All the Way Around",
+  "manifest_query": "lunar farside",
+  "verdict": "keep",
+  "reason": "lunar + crater:mare,maria/dark:dark,far side,farside",
+  "mean_luminance": 97.6,
+  "nasa_title": "The Far Side of the Moon -- And All the Way Around"
+ },
+ {
+  "id": "as08-17-2704",
+  "title": "Near vertical view of lunar farside taken from Apollo 8 spacecraft",
+  "manifest_query": "lunar farside",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:farside",
+  "mean_luminance": 134.6,
+  "nasa_title": "Near vertical view of lunar farside taken from Apollo 8 spacecraft"
+ },
+ {
+  "id": "as10-27-3890",
+  "title": "Apollo 10 view of the Earth rising above the lunar horizon",
+  "manifest_query": "lunar farside",
+  "verdict": "keep",
+  "reason": "lunar + crater:highland/dark:farside",
+  "mean_luminance": 33.9,
+  "nasa_title": "Apollo 10 view of the Earth rising above the lunar horizon"
+ },
+ {
+  "id": "as16-118-18964",
+  "title": "Apollo 16 Mission image - View of the Leonov Crater",
+  "manifest_query": "lunar farside",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:farside",
+  "mean_luminance": 86.1,
+  "nasa_title": "Apollo 16 Mission image - View of the Leonov Crater"
+ },
+ {
+  "id": "as12-47-6870",
+  "title": "Apollo 12 Mission image - High oblique view of Craters 285,287 and Tsiolkovski",
+  "manifest_query": "lunar farside",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:farside",
+  "mean_luminance": 62.7,
+  "nasa_title": "Apollo 12 Mission image - High oblique view of Craters 285,287 and Tsiolkovski "
+ },
+ {
+  "id": "as08-14-2446",
+  "title": "Apollo 8 Mission image,Moon, farside, T/O 49",
+  "manifest_query": "lunar farside",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:farside",
+  "mean_luminance": 129.9,
+  "nasa_title": "Apollo 8 Mission image,Moon, farside, T/O 49"
+ },
+ {
+  "id": "art002e024232",
+  "title": "Approaching Lunar Flyby",
+  "manifest_query": "lunar farside",
+  "verdict": "keep",
+  "reason": "lunar + dark:farside",
+  "mean_luminance": 3.1,
+  "nasa_title": "Approaching Lunar Flyby"
+ },
+ {
+  "id": "as08-14-2431",
+  "title": "Apollo 8 Mission image,Moon, farside",
+  "manifest_query": "lunar farside",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:farside",
+  "mean_luminance": 123.8,
+  "nasa_title": "Apollo 8 Mission image,Moon, farside"
+ },
+ {
+  "id": "as08-14-2432",
+  "title": "Apollo 8 Mission image,Moon, farside",
+  "manifest_query": "lunar farside",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:farside",
+  "mean_luminance": 145.2,
+  "nasa_title": "Apollo 8 Mission image,Moon, farside"
+ },
+ {
+  "id": "as08-17-2744",
+  "title": "Oblique view of lunar surface taken from Apollo 8 spacecraft",
+  "manifest_query": "lunar farside",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:dark,farside",
+  "mean_luminance": 149.1,
+  "nasa_title": "Oblique view of lunar surface taken from Apollo 8 spacecraft"
+ },
+ {
+  "id": "as16-118-18947",
+  "title": "Apollo 16 Mission image - View of the Van Gent and Nagaoka Craters",
+  "manifest_query": "lunar farside",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater,highland/dark:farside",
+  "mean_luminance": 103.2,
+  "nasa_title": "Apollo 16 Mission image - View of the Van Gent and Nagaoka Craters"
+ },
+ {
+  "id": "PIA26298",
+  "title": "Farside Seismic Suite Prepared for Testing in JPL Clean Room",
+  "manifest_query": "lunar farside",
+  "verdict": "keep",
+  "reason": "lunar + dark:far side,farside,night",
+  "mean_luminance": 143.8,
+  "nasa_title": "Farside Seismic Suite Prepared for Testing in JPL Clean Room"
+ },
+ {
+  "id": "as08-12-2052",
+  "title": "View of lunar surface taken from Apollo 8 spacecraft",
+  "manifest_query": "lunar farside",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:farside",
+  "mean_luminance": 97.6,
+  "nasa_title": "View of lunar surface taken from Apollo 8 spacecraft"
+ },
+ {
+  "id": "as08-18-2883",
+  "title": "Apollo 8 Mission image,Moon",
+  "manifest_query": "lunar farside",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:dark,farside",
+  "mean_luminance": 47.7,
+  "nasa_title": "Apollo 8 Mission image,Moon"
+ },
+ {
+  "id": "as08-14-2453",
+  "title": "Apollo 8 Mission image, Moon, fairside",
+  "manifest_query": "lunar farside",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:farside",
+  "mean_luminance": 136.3,
+  "nasa_title": "Apollo 8 Mission image, Moon, fairside"
+ },
+ {
+  "id": "as13-60-8635",
+  "title": "Apollo 13 Mission image - View of the Keeler crater",
+  "manifest_query": "lunar farside",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:farside",
+  "mean_luminance": 23.0,
+  "nasa_title": "Apollo 13 Mission image - View of the Keeler crater "
+ },
+ {
+  "id": "as16-120-19228",
+  "title": "Apollo 16 Mission image - View of the north rim of the King Crater.",
+  "manifest_query": "lunar farside",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:farside",
+  "mean_luminance": 144.6,
+  "nasa_title": "Apollo 16 Mission image - View of the north rim of the King Crater."
+ },
+ {
+  "id": "NHQ202211300021",
+  "title": "Vice President Harris and French President Macron meet at NASA H",
+  "manifest_query": "lunar farside",
+  "verdict": "keep",
+  "reason": "lunar + dark:far side,farside",
+  "mean_luminance": 98.7,
+  "nasa_title": "Vice President Harris and French President Macron meet at NASA H"
+ },
+ {
+  "id": "NHQ202211300024",
+  "title": "Vice President Harris and French President Macron meet at NASA H",
+  "manifest_query": "lunar farside",
+  "verdict": "keep",
+  "reason": "lunar + dark:far side,farside",
+  "mean_luminance": 122.1,
+  "nasa_title": "Vice President Harris and French President Macron meet at NASA H"
+ },
+ {
+  "id": "NHQ202211300022",
+  "title": "Vice President Harris and French President Macron meet at NASA H",
+  "manifest_query": "lunar farside",
+  "verdict": "keep",
+  "reason": "lunar + dark:far side,farside",
+  "mean_luminance": 85.6,
+  "nasa_title": "Vice President Harris and French President Macron meet at NASA H"
+ },
+ {
+  "id": "AS12-47-6949",
+  "title": "Apollo 12 Mission image - Lunar surface near lunar module",
+  "manifest_query": "lunar farside",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:farside,shadow",
+  "mean_luminance": 46.8,
+  "nasa_title": "Apollo 12 Mission image - Lunar surface near lunar module "
+ },
+ {
+  "id": "as08-13-2244",
+  "title": "Apollo 8 Mission image,Target of Opportunity (T/O) 12",
+  "manifest_query": "lunar farside",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:farside",
+  "mean_luminance": 104.5,
+  "nasa_title": "Apollo 8 Mission image,Target of Opportunity (T/O) 12 "
+ },
+ {
+  "id": "PIA26341",
+  "title": "Getting Farside Seismic Suite Ready for Testing",
+  "manifest_query": "lunar farside",
+  "verdict": "keep",
+  "reason": "lunar + dark:far side,farside,night",
+  "mean_luminance": 137.6,
+  "nasa_title": "Getting Farside Seismic Suite Ready for Testing"
+ },
+ {
+  "id": "PIA00303",
+  "title": "East Limb View of Earth Moon as Seen by the Clementine Spacecraft",
+  "manifest_query": "lunar farside",
+  "verdict": "keep",
+  "reason": "lunar + crater:basin,mare,maria/dark:dark,farside,pole",
+  "mean_luminance": 73.2,
+  "nasa_title": "East Limb View of Earth Moon as Seen by the Clementine Spacecraft"
+ },
+ {
+  "id": "PIA00305",
+  "title": "West Limb View of Earth Moon as Seen by the Clementine Spacecraft",
+  "manifest_query": "lunar farside",
+  "verdict": "keep",
+  "reason": "lunar + crater:basin,mare,maria/dark:dark,farside,pole",
+  "mean_luminance": 70.0,
+  "nasa_title": "West Limb View of Earth Moon as Seen by the Clementine Spacecraft"
+ },
+ {
+  "id": "ARC-1990-A91-2007",
+  "title": "ARC-1990-A91-2007",
+  "manifest_query": "lunar maria",
+  "verdict": "keep",
+  "reason": "lunar + crater:basin,mare,maria/dark:dark,far side",
+  "mean_luminance": 96.4,
+  "nasa_title": "ARC-1990-A91-2007"
+ },
+ {
+  "id": "ARC-1990-AC91-2016",
+  "title": "ARC-1990-AC91-2016",
+  "manifest_query": "lunar maria",
+  "verdict": "keep",
+  "reason": "lunar + crater:basin,mare,maria/dark:dark,far side",
+  "mean_luminance": 85.3,
+  "nasa_title": "ARC-1990-AC91-2016"
+ },
+ {
+  "id": "jsc2024e036399",
+  "title": "JETT 5 - jsc2024e036399",
+  "manifest_query": "lunar maria",
+  "verdict": "keep",
+  "reason": "lunar + crater:maria",
+  "mean_luminance": 131.5,
+  "nasa_title": "JETT 5 - jsc2024e036399"
+ },
+ {
+  "id": "201108250004HQ",
+  "title": "GRAIL Mission Briefing",
+  "manifest_query": "lunar maria",
+  "verdict": "keep",
+  "reason": "lunar + crater:maria",
+  "mean_luminance": 54.7,
+  "nasa_title": "GRAIL Mission Briefing"
+ },
+ {
+  "id": "jsc2026e020756",
+  "title": "Artemis lunar science team celebrates during flyby -- jsc2026e020756",
+  "manifest_query": "lunar maria",
+  "verdict": "keep",
+  "reason": "lunar + crater:maria",
+  "mean_luminance": 93.0,
+  "nasa_title": "Artemis lunar science team celebrates during flyby -- jsc2026e020756"
+ },
+ {
+  "id": "KSC-2011-6794",
+  "title": "KSC-2011-6794",
+  "manifest_query": "lunar maria",
+  "verdict": "keep",
+  "reason": "lunar + crater:maria",
+  "mean_luminance": 123.8,
+  "nasa_title": "KSC-2011-6794"
+ },
+ {
+  "id": "GSFC_20171208_Archive_e000954",
+  "title": "Topography of Earth's moon",
+  "manifest_query": "lunar maria",
+  "verdict": "keep",
+  "reason": "lunar + crater:maria",
+  "mean_luminance": 63.6,
+  "nasa_title": "Topography of Earth's moon"
+ },
+ {
+  "id": "PIA13148",
+  "title": "Rima Bode",
+  "manifest_query": "lunar highlands",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater,highland/dark:dark",
+  "mean_luminance": 52.6,
+  "nasa_title": "Rima Bode"
+ },
+ {
+  "id": "S70-54740",
+  "title": "S70-54740",
+  "manifest_query": "lunar highlands",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater,highland",
+  "mean_luminance": 129.4,
+  "nasa_title": "S70-54740"
+ },
+ {
+  "id": "KSC-97pc1041",
+  "title": "KSC-97pc1041",
+  "manifest_query": "lunar highlands",
+  "verdict": "keep",
+  "reason": "lunar + crater:highland/dark:pole",
+  "mean_luminance": 112.8,
+  "nasa_title": "KSC-97pc1041"
+ },
+ {
+  "id": "KSC-97PC1590",
+  "title": "KSC-97PC1590",
+  "manifest_query": "lunar highlands",
+  "verdict": "keep",
+  "reason": "lunar + crater:highland/dark:pole",
+  "mean_luminance": 83.0,
+  "nasa_title": "KSC-97PC1590"
+ },
+ {
+  "id": "KSC-97PC1591",
+  "title": "KSC-97PC1591",
+  "manifest_query": "lunar highlands",
+  "verdict": "keep",
+  "reason": "lunar + crater:highland/dark:pole",
+  "mean_luminance": 89.4,
+  "nasa_title": "KSC-97PC1591"
+ },
+ {
+  "id": "KSC-97PC1100",
+  "title": "KSC-97PC1100",
+  "manifest_query": "lunar highlands",
+  "verdict": "keep",
+  "reason": "lunar + dark:pole",
+  "mean_luminance": 144.3,
+  "nasa_title": "KSC-97PC1100"
+ },
+ {
+  "id": "S72-40818",
+  "title": "EXPERIMENT - APOLLO XVI (UV)",
+  "manifest_query": "lunar highlands",
+  "verdict": "keep",
+  "reason": "lunar + crater:highland",
+  "mean_luminance": 31.6,
+  "nasa_title": "EXPERIMENT - APOLLO XVI (UV)"
+ },
+ {
+  "id": "S75-23543",
+  "title": "LUNAR SAMPLES - APOLLO XVI - JSC",
+  "manifest_query": "lunar highlands",
+  "verdict": "keep",
+  "reason": "lunar + crater:highland",
+  "mean_luminance": 85.8,
+  "nasa_title": "LUNAR SAMPLES - APOLLO XVI - JSC"
+ },
+ {
+  "id": "as16-119-19161",
+  "title": "as16-119-19161",
+  "manifest_query": "lunar highlands",
+  "verdict": "keep",
+  "reason": "lunar + crater:highland,rille",
+  "mean_luminance": 111.6,
+  "nasa_title": "as16-119-19161"
+ },
+ {
+  "id": "KSC-97PC1588",
+  "title": "KSC-97PC1588",
+  "manifest_query": "lunar highlands",
+  "verdict": "keep",
+  "reason": "lunar + dark:pole",
+  "mean_luminance": 125.6,
+  "nasa_title": "KSC-97PC1588"
+ },
+ {
+  "id": "KSC-97PC1589",
+  "title": "KSC-97PC1589",
+  "manifest_query": "lunar highlands",
+  "verdict": "keep",
+  "reason": "lunar + dark:pole",
+  "mean_luminance": 96.0,
+  "nasa_title": "KSC-97PC1589"
+ },
+ {
+  "id": "as16-120-19332",
+  "title": "Apollo 16 Mission image - View of the Mersenius C and Rilles Craters.",
+  "manifest_query": "lunar highlands",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater,highland,rille",
+  "mean_luminance": 42.7,
+  "nasa_title": "Apollo 16 Mission image - View of the Mersenius C and Rilles Craters."
+ },
+ {
+  "id": "S72-35611",
+  "title": "Apollo XVI TV TRANSMISSION - POOR QUALITY",
+  "manifest_query": "lunar highlands",
+  "verdict": "keep",
+  "reason": "lunar + crater:highland",
+  "mean_luminance": 75.2,
+  "nasa_title": "Apollo XVI TV TRANSMISSION - POOR QUALITY"
+ },
+ {
+  "id": "S72-35347",
+  "title": "Apollo 16 liftoff",
+  "manifest_query": "lunar highlands",
+  "verdict": "keep",
+  "reason": "lunar + crater:highland",
+  "mean_luminance": 116.2,
+  "nasa_title": "Apollo 16 liftoff"
+ },
+ {
+  "id": "S71-44150",
+  "title": "Vertical view of Apollo 16 landing site located Descartes area lunar nearside",
+  "manifest_query": "lunar highlands",
+  "verdict": "keep",
+  "reason": "lunar + crater:highland",
+  "mean_luminance": 117.6,
+  "nasa_title": "Vertical view of Apollo 16 landing site located Descartes area lunar nearside"
+ },
+ {
+  "id": "70PC-0018",
+  "title": "KSC-70PC-0018",
+  "manifest_query": "lunar highlands",
+  "verdict": "keep",
+  "reason": "lunar + crater:highland",
+  "mean_luminance": 124.7,
+  "nasa_title": "KSC-70PC-0018"
+ },
+ {
+  "id": "KSC-2012-6145",
+  "title": "KSC-2012-6145",
+  "manifest_query": "lunar highlands",
+  "verdict": "keep",
+  "reason": "lunar + crater:highland",
+  "mean_luminance": 79.2,
+  "nasa_title": "KSC-2012-6145"
+ },
+ {
+  "id": "KSC-2012-6143",
+  "title": "KSC-2012-6143",
+  "manifest_query": "lunar highlands",
+  "verdict": "keep",
+  "reason": "lunar + crater:highland",
+  "mean_luminance": 101.0,
+  "nasa_title": "KSC-2012-6143"
+ },
+ {
+  "id": "as16-118-18880",
+  "title": "Apollo 16 view of the earth from translunar injection",
+  "manifest_query": "lunar highlands",
+  "verdict": "keep",
+  "reason": "lunar + crater:highland",
+  "mean_luminance": 101.7,
+  "nasa_title": "Apollo 16 view of the earth from translunar injection"
+ },
+ {
+  "id": "S70-19764",
+  "title": "ALTITUDE TESTS - ASTRONAUTS SHEPARD AND MITCHELL - KSC",
+  "manifest_query": "lunar highlands",
+  "verdict": "keep",
+  "reason": "lunar + crater:highland",
+  "mean_luminance": 204.3,
+  "nasa_title": "ALTITUDE TESTS - ASTRONAUTS SHEPARD AND MITCHELL - KSC"
+ },
+ {
+  "id": "as08-17-2814",
+  "title": "Oblique view of the lunar surface taken from Apollo 8 spacecraft",
+  "manifest_query": "lunar highlands",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater,highland",
+  "mean_luminance": 39.7,
+  "nasa_title": "Oblique view of the lunar surface taken from Apollo 8 spacecraft"
+ },
+ {
+  "id": "as08-17-2821",
+  "title": "Oblique view of the lunar surface taken from Apollo 8 spacecraft",
+  "manifest_query": "lunar highlands",
+  "verdict": "keep",
+  "reason": "lunar + crater:highland/dark:dark",
+  "mean_luminance": 18.6,
+  "nasa_title": "Oblique view of the lunar surface taken from Apollo 8 spacecraft"
+ },
+ {
+  "id": "art002e012723",
+  "title": "Birkhoff Crater in Low-Light Detail",
+  "manifest_query": "lunar highlands",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater,highland/dark:far side",
+  "mean_luminance": 21.7,
+  "nasa_title": "Birkhoff Crater in Low-Light Detail "
+ },
+ {
+  "id": "as16-117-18728",
+  "title": "View of \"Shadow Rock\" taken during third extravehicular activity",
+  "manifest_query": "lunar highlands",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater/dark:shadow",
+  "mean_luminance": 147.5,
+  "nasa_title": "View of \"Shadow Rock\" taken during third extravehicular activity"
+ },
+ {
+  "id": "iss064e027825",
+  "title": "iss064e027825",
+  "manifest_query": "moon phases",
+  "verdict": "keep",
+  "reason": "lunar + dark:gibbous,waning",
+  "mean_luminance": 31.2,
+  "nasa_title": "iss064e027825"
+ },
+ {
+  "id": "iss064e027820",
+  "title": "iss064e027820",
+  "manifest_query": "moon phases",
+  "verdict": "keep",
+  "reason": "lunar + dark:gibbous,waning",
+  "mean_luminance": 19.2,
+  "nasa_title": "iss064e027820"
+ },
+ {
+  "id": "ACD17-0155-003",
+  "title": "Ames Eclipse Viewing 2017",
+  "manifest_query": "moon phases",
+  "verdict": "keep",
+  "reason": "lunar + dark:eclipse",
+  "mean_luminance": 96.2,
+  "nasa_title": "Ames Eclipse Viewing 2017"
+ },
+ {
+  "id": "iss064e016494",
+  "title": "iss064e016494",
+  "manifest_query": "moon phases",
+  "verdict": "keep",
+  "reason": "lunar + dark:gibbous,waxing",
+  "mean_luminance": 4.8,
+  "nasa_title": "iss064e016494"
+ },
+ {
+  "id": "iss064e016473",
+  "title": "iss064e016473",
+  "manifest_query": "moon phases",
+  "verdict": "keep",
+  "reason": "lunar + dark:gibbous,waxing",
+  "mean_luminance": 10.5,
+  "nasa_title": "iss064e016473"
+ },
+ {
+  "id": "iss059e021191",
+  "title": "iss059e021191",
+  "manifest_query": "moon phases",
+  "verdict": "keep",
+  "reason": "lunar + dark:gibbous,waxing",
+  "mean_luminance": 3.7,
+  "nasa_title": "iss059e021191"
+ },
+ {
+  "id": "art002e015228",
+  "title": "Moon's Farside in the Foreground, Earth Beyond",
+  "manifest_query": "moon phases",
+  "verdict": "keep",
+  "reason": "lunar + dark:farside",
+  "mean_luminance": 12.8,
+  "nasa_title": "Moon's Farside in the Foreground, Earth Beyond"
+ },
+ {
+  "id": "iss059e027725",
+  "title": "iss059e027725",
+  "manifest_query": "moon phases",
+  "verdict": "keep",
+  "reason": "lunar + dark:gibbous,waning",
+  "mean_luminance": 82.9,
+  "nasa_title": "iss059e027725"
+ },
+ {
+  "id": "art001e000342",
+  "title": "Flight Day 6: Orion's Optical Navigation Camera Captures Lunar Surface",
+  "manifest_query": "moon phases",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater",
+  "mean_luminance": 121.8,
+  "nasa_title": "Flight Day 6: Orion's Optical Navigation Camera Captures Lunar Surface"
+ },
+ {
+  "id": "art001e000339",
+  "title": "Flight Day 6: Orion's Optical Navigation Camera Captures Lunar Surface",
+  "manifest_query": "moon phases",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater",
+  "mean_luminance": 115.5,
+  "nasa_title": "Flight Day 6: Orion's Optical Navigation Camera Captures Lunar Surface"
+ },
+ {
+  "id": "art001e000334",
+  "title": "Flight Day 6: Orion's Optical Navigation Camera Captures Lunar Surface",
+  "manifest_query": "moon phases",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater",
+  "mean_luminance": 130.9,
+  "nasa_title": "Flight Day 6: Orion's Optical Navigation Camera Captures Lunar Surface"
+ },
+ {
+  "id": "art001e000348",
+  "title": "Flight Day 6: Orion's Optical Navigation Camera Captures Lunar Surface",
+  "manifest_query": "moon phases",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater",
+  "mean_luminance": 51.3,
+  "nasa_title": "Flight Day 6: Orion's Optical Navigation Camera Captures Lunar Surface"
+ },
+ {
+  "id": "art001e000345",
+  "title": "Flight Day 6: Orion's Optical Navigation Camera Captures Lunar Surface",
+  "manifest_query": "moon phases",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater",
+  "mean_luminance": 112.6,
+  "nasa_title": "Flight Day 6: Orion's Optical Navigation Camera Captures Lunar Surface"
+ },
+ {
+  "id": "art001e000340",
+  "title": "Flight Day 6: Orion's Optical Navigation Camera Captures Lunar Surface",
+  "manifest_query": "moon phases",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater",
+  "mean_luminance": 117.3,
+  "nasa_title": "Flight Day 6: Orion's Optical Navigation Camera Captures Lunar Surface"
+ },
+ {
+  "id": "art001e000346",
+  "title": "Flight Day 6: Orion's Optical Navigation Camera Captures Lunar Surface",
+  "manifest_query": "moon phases",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater",
+  "mean_luminance": 99.7,
+  "nasa_title": "Flight Day 6: Orion's Optical Navigation Camera Captures Lunar Surface"
+ },
+ {
+  "id": "art001e000341",
+  "title": "Flight Day 6: Orion's Optical Navigation Camera Captures Lunar Surface",
+  "manifest_query": "moon phases",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater",
+  "mean_luminance": 118.9,
+  "nasa_title": "Flight Day 6: Orion's Optical Navigation Camera Captures Lunar Surface"
+ },
+ {
+  "id": "art001e000343",
+  "title": "Flight Day 6: Orion's Optical Navigation Camera Captures Lunar Surface",
+  "manifest_query": "moon phases",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater",
+  "mean_luminance": 118.9,
+  "nasa_title": "Flight Day 6: Orion's Optical Navigation Camera Captures Lunar Surface"
+ },
+ {
+  "id": "art001e000338",
+  "title": "Flight Day 6: Orion's Optical Navigation Camera Captures Lunar Surface",
+  "manifest_query": "moon phases",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater",
+  "mean_luminance": 120.3,
+  "nasa_title": "Flight Day 6: Orion's Optical Navigation Camera Captures Lunar Surface"
+ },
+ {
+  "id": "art001e000333",
+  "title": "Flight Day 6: Orion's Optical Navigation Camera Captures Lunar Surface",
+  "manifest_query": "moon phases",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater",
+  "mean_luminance": 135.1,
+  "nasa_title": "Flight Day 6: Orion's Optical Navigation Camera Captures Lunar Surface"
+ },
+ {
+  "id": "art001e000344",
+  "title": "Flight Day 6: Orion's Optical Navigation Camera Captures Lunar Surface",
+  "manifest_query": "moon phases",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater",
+  "mean_luminance": 120.5,
+  "nasa_title": "Flight Day 6: Orion's Optical Navigation Camera Captures Lunar Surface"
+ },
+ {
+  "id": "art001e000335",
+  "title": "Flight Day 6: Orion's Optical Navigation Camera Captures Lunar Surface",
+  "manifest_query": "moon phases",
+  "verdict": "keep",
+  "reason": "lunar + crater:crater",
+  "mean_luminance": 136.1,
+  "nasa_title": "Flight Day 6: Orion's Optical Navigation Camera Captures Lunar Surface"
+ }
+]

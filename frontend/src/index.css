@@ -1,0 +1,25 @@
+:root {
+  --bg: #05070d;
+  --panel: #0b111c;
+  --panel-2: #101828;
+  --border: #1e2a3d;
+  --text: #dbe4f0;
+  --muted: #8fa0b5;
+  --accent: #7dd3fc;
+  --ok: #4ade80;
+  --sans: 'Inter', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Consolas, monospace;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  line-height: 1.55;
+}
+
+#root { min-height: 100vh; }

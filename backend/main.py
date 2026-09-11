@@ -305,9 +305,31 @@ async def enhance(
         "fvi_proxy": round(std_e / std_o, 3),
     }
 
+    # Visibility check: how much more the human eye can see. Histograms
+    # plus crushed-black recovery and dark-region lift, all on luminance.
+    hist_before, _ = np.histogram(orig_gray, bins=256, range=(0, 256))
+    hist_after, _ = np.histogram(enh_gray, bins=256, range=(0, 256))
+    dark_thresh = float(np.percentile(orig_gray, 25))
+    dark_mask = orig_gray <= dark_thresh
+    if not bool(dark_mask.any()):
+        dark_mask = np.ones_like(orig_gray, dtype=bool)
+    visibility = {
+        "hist_before": [int(v) for v in hist_before],
+        "hist_after": [int(v) for v in hist_after],
+        "crushed_before": round(float(np.mean(orig_gray < 16)) * 100.0, 1),
+        "crushed_after": round(float(np.mean(enh_gray < 16)) * 100.0, 1),
+        "dark_lift": round(
+            (float(np.mean(enh_gray[dark_mask])) + 1.0)
+            / (float(np.mean(orig_gray[dark_mask])) + 1.0),
+            3,
+        ),
+        "contrast_gain": round(std_e / std_o, 3),
+    }
+
     return {
         "image": "data:image/png;base64," + image_b64,
         "metrics": metrics,
+        "visibility": visibility,
         "metrics_note": METRICS_NOTE,
         "stages": stages,
         "options": {

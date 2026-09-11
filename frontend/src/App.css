@@ -1,7 +1,37 @@
 .page {
+  position: relative;
+  z-index: 1;
   max-width: 1120px;
   margin: 0 auto;
   padding: 0 24px 32px;
+}
+
+/* Full-screen nebula video backdrop — subtle by design so content stays first. */
+.bg-video {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+  filter: blur(3px) brightness(0.55) saturate(1.15);
+  transform: scale(1.06); /* hides soft edges left by the blur */
+  pointer-events: none;
+}
+
+/* Dark veil over the video for text readability. */
+.bg-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 50% 18%, rgba(5, 7, 13, 0.2), rgba(5, 7, 13, 0.7) 78%),
+    linear-gradient(180deg, rgba(5, 7, 13, 0.5), rgba(5, 7, 13, 0.62));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bg-video { display: none; }
 }
 
 .topbar {
@@ -381,6 +411,55 @@ footer {
 
 .note { font-size: 12px; color: var(--muted); margin: 8px 0; }
 
+/* ---- Visibility check ---- */
+.vis-hist {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #05070d;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-top: 12px;
+}
+.vis-legend {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  font-size: 11px;
+  color: var(--muted);
+  font-family: var(--mono);
+  margin: 6px 0 2px;
+}
+.vis-legend i {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  margin-right: 6px;
+}
+.vis-tiles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 12px 0 4px;
+}
+.vis-tile {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--panel-2);
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.vis-num {
+  color: #fff;
+  font-family: var(--mono);
+  font-size: 15px;
+  font-weight: 700;
+}
+.vis-label { color: var(--muted); font-size: 11px; }
+
 .research {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
@@ -600,5 +679,6 @@ footer {
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; padding-top: 36px; }
   .results, .info, .research { grid-template-columns: 1fr; }
+  .vis-tiles { grid-template-columns: 1fr; }
   .cards.centered .card.analysis { max-width: 100%; }
 }

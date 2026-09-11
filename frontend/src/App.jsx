@@ -11,6 +11,63 @@ const BACKEND_OFFLINE =
 const FORMAT_ERROR =
   'Unsupported format. Please upload JPG, JPEG, PNG, TIFF, or WEBP (50 MB max).'
 
+function VisHistogram({ before, after }) {
+  const W = 280
+  const H = 110
+  const PAD = 4
+  const STEP = 2
+  const n = Math.ceil(256 / STEP)
+  const sums = []
+  let peak = 1
+  for (let b = 0; b < n; b++) {
+    let bv = 0
+    let av = 0
+    for (let k = 0; k < STEP && b * STEP + k < 256; k++) {
+      bv += before[b * STEP + k] || 0
+      av += after[b * STEP + k] || 0
+    }
+    sums.push([bv, av])
+    peak = Math.max(peak, bv, av)
+  }
+  // Shared log scale: the crushed-black spike stays visible without
+  // flattening everything else.
+  const scale = (H - PAD * 2) / Math.log1p(peak)
+  const bw = (W - PAD * 2) / n
+  return (
+    <svg
+      viewBox={`0 0 ${W} ${H}`}
+      className="vis-hist"
+      role="img"
+      aria-label="Brightness histogram before and after enhancement"
+    >
+      {sums.map(([bv, av], b) => {
+        const x = PAD + b * bw
+        const w = Math.max(0.5, bw - 0.5)
+        return (
+          <g key={b}>
+            <rect
+              x={x}
+              y={H - PAD - Math.log1p(bv) * scale}
+              width={w}
+              height={Math.log1p(bv) * scale}
+              fill="#5b6b82"
+              opacity="0.85"
+            />
+            <rect
+              x={x}
+              y={H - PAD - Math.log1p(av) * scale}
+              width={w}
+              height={Math.log1p(av) * scale}
+              fill="#7dd3fc"
+              opacity="0.7"
+            />
+          </g>
+        )
+      })}
+    </svg>
+  )
+}
+
 function extOf(name) {
   const n = (name || '').toLowerCase()
   const i = n.lastIndexOf('.')
@@ -23,7 +80,6 @@ export default function App() {
   const [resultUrl, setResultUrl] = useState(null)
   const [status, setStatus] = useState('idle') // idle | selected | processing | done | error
   const [error, setError] = useState('')
-  const [metrics, setMetrics] = useState(null)
   const [metricsNote, setMetricsNote] = useState('')
   const [stagesApplied, setStagesApplied] = useState([])
   const [outputInfo, setOutputInfo] = useState(null)
@@ -31,6 +87,8 @@ export default function App() {
   const [gamma, setGamma] = useState(1.4)
   const [bilateral, setBilateral] = useState(true)
   const [diffusion, setDiffusion] = useState(true)
+  const [visibility, setVisibility] = useState(null)
+  const [bgVideoOk, setBgVideoOk] = useState(true)
   const [libOpen, setLibOpen] = useState(false)
   const [libManifest, setLibManifest] = useState(null)
   const [libLoading, setLibLoading] = useState(false)
@@ -51,9 +109,10 @@ export default function App() {
   function pickFile(e) {
     const f = e.target.files?.[0]
     setError('')
-    setMetrics(null)
+    setMetricsNote('')
     setStagesApplied([])
     setOutputInfo(null)
+    setVisibility(null)
     setResultUrl((u) => {
       if (u && u.startsWith('blob:')) URL.revokeObjectURL(u)
       return null
@@ -135,9 +194,9 @@ export default function App() {
       }
       const j = await res.json()
       setResultUrl(j.image)
-      setMetrics(j.metrics || null)
       setMetricsNote(j.metrics_note || '')
       setStagesApplied(j.stages || [])
+      setVisibility(j.visibility || null)
       setOutputInfo(j.output || null)
       setStatus('done')
     } catch {
@@ -149,10 +208,10 @@ export default function App() {
   function reset() {
     setFile(null)
     setError('')
-    setMetrics(null)
     setMetricsNote('')
     setStagesApplied([])
     setOutputInfo(null)
+    setVisibility(null)
     setPreviewUrl((u) => {
       if (u) URL.revokeObjectURL(u)
       return null
@@ -264,13 +323,27 @@ export default function App() {
   const libPayload = libSelected ? libCache.current[libSelected.id] : null
 
   return (
-    <div className="page">
+    <>
+      {bgVideoOk && (
+        <video
+          className="bg-video"
+          src="/deep-space-nebula-moewalls-com.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          aria-hidden="true"
+          tabIndex={-1}
+          onError={() => setBgVideoOk(false)}
+        />
+      )}
+      <div className="bg-overlay" aria-hidden="true" />
+      <div className="page">
       <header className="topbar">
         <div className="brand">LUNARIS OBSERVATORY</div>
         <div className="top-meta">
           <span>MISSION CONTROL</span>
-          <span className="dot" aria-hidden="true" />
-          <span className="ok">SYSTEM OPERATIONAL</span>
         </div>
       </header>
 
@@ -401,47 +474,6 @@ export default function App() {
                       ))}
                     </div>
                   )}
-                  {metrics && (
-                    <>
-                      <table className="metrics">
-                        <caption>Evaluation (paper VII.D) — luminance</caption>
-                        <tbody>
-                          <tr>
-                            <th scope="row">
-                              SNR (Signal-to-Noise Ratio) before → after
-                            </th>
-                            <td>
-                              {metrics.snr_before_db} → {metrics.snr_after_db}{' '}
-                              dB
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">
-                              PSNR (Peak Signal-to-Noise Ratio)
-                            </th>
-                            <td>{metrics.psnr_db} dB</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">
-                              SSIM (Structural Similarity Index)
-                            </th>
-                            <td>{metrics.ssim}</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">
-                              FVI (Feature Visibility Index, proxy)
-                            </th>
-                            <td>{metrics.fvi_proxy}</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <p className="note">
-                        Higher SNR / PSNR means cleaner signal; SSIM near 1.0
-                        means structure was preserved; FVI proxy above 1.0 means
-                        contrast visibility improved.
-                      </p>
-                    </>
-                  )}
                   {metricsNote && <p className="note">{metricsNote}</p>}
                   {outputInfo?.downscaled && (
                     <p className="note">
@@ -465,6 +497,54 @@ export default function App() {
                 </div>
               )}
             </div>
+          </section>
+        )}
+
+        {resultUrl && visibility && (
+          <section className="cards centered">
+            <article className="card analysis">
+              <p className="card-label">VISIBILITY CHECK</p>
+              <h2>How much more can you see?</h2>
+              <p className="card-text">
+                Brightness histograms of the original versus the enhanced
+                image, plus what changed in the shadows.
+              </p>
+              <VisHistogram
+                before={visibility.hist_before}
+                after={visibility.hist_after}
+              />
+              <div className="vis-legend" aria-hidden="true">
+                <span>
+                  <i style={{ background: '#5b6b82' }} />
+                  before
+                </span>
+                <span>
+                  <i style={{ background: '#7dd3fc' }} />
+                  after
+                </span>
+                <span>dark → bright</span>
+              </div>
+              <div className="vis-tiles">
+                <div className="vis-tile">
+                  <span className="vis-num">
+                    {visibility.crushed_before}% → {visibility.crushed_after}%
+                  </span>
+                  <span className="vis-label">
+                    Crushed-black pixels recovered
+                  </span>
+                </div>
+                <div className="vis-tile">
+                  <span className="vis-num">{visibility.dark_lift}×</span>
+                  <span className="vis-label">
+                    Dark-region brightness lift
+                  </span>
+                </div>
+                <div className="vis-tile">
+                  <span className="vis-num">{visibility.contrast_gain}×</span>
+                  <span className="vis-label">Contrast gain</span>
+                </div>
+              </div>
+            </article>
           </section>
         )}
 
@@ -951,6 +1031,7 @@ export default function App() {
           </div>
         </div>
       )}
-    </div>
+      </div>
+    </>
   )
 }

@@ -14,6 +14,7 @@ The pipeline stretches existing faint signal; it does NOT invent terrain.
 Metrics are computed original-vs-enhanced on luminance for transparency.
 """
 import base64
+import hashlib
 import io
 
 import cv2
@@ -23,6 +24,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse, Response
 from PIL import Image, ImageOps
 from pydantic import BaseModel
+
+from backend import terrain as T
 
 from backend.library import (
     PAPER_QUERIES,
@@ -81,6 +84,8 @@ def root():
         "message": "LUNARIS API is running. Open the frontend (Vite, :5173), not this URL.",
         "health": "/api/health",
         "enhance": "POST /api/enhance (multipart: file + denoise/gamma/bilateral/diffusion)",
+        "analyze": "POST /api/analyze (multipart: enhanced image + classical CV params)",
+        "route": "POST /api/route (JSON: analysis_id + start/target + mode) — A*/Dijkstra, no AI",
     }
 
 
@@ -107,6 +112,22 @@ def _as_gamma(value: str, default: float = 1.4) -> float:
     except (TypeError, ValueError):
         return default
     return min(3.0, max(0.5, g))
+
+
+def _as_float(value: str, default: float, lo: float, hi: float) -> float:
+    try:
+        v = float(value)
+    except (TypeError, ValueError):
+        return default
+    return min(hi, max(lo, v))
+
+
+def _as_int(value: str, default: int, lo: int, hi: int) -> int:
+    try:
+        v = int(float(value))
+    except (TypeError, ValueError):
+        return default
+    return min(hi, max(lo, v))
 
 
 def _gamma_lut(gamma: float) -> np.ndarray:
@@ -413,3 +434,217 @@ def library_compare(id: str = ""):
             status_code=500,
             content={"detail": "Enhancement failed. Please try another image."},
         )
+
+
+# ---- Terrain intelligence: in-memory analysis cache ----
+# key: sha256(image bytes + params). Rasters are small (analysis is capped
+# at 960px); entries evicted oldest-first. Lost on restart by design —
+# the frontend simply re-runs Analyze (seconds).
+_ANALYSIS_CACHE: dict = {}
+_ANALYSIS_ORDER: list = []
+_ANALYSIS_MAX = 6
+ANALYSIS_DIM = 960
+
+
+def _analysis_cache_get(key: str):
+    entry = _ANALYSIS_CACHE.get(key)
+    if entry is not None:
+        _ANALYSIS_ORDER.remove(key)
+        _ANALYSIS_ORDER.append(key)
+    return entry
+
+
+def _analysis_cache_put(key: str, entry: dict):
+    if key in _ANALYSIS_CACHE:
+        _ANALYSIS_ORDER.remove(key)
+    elif len(_ANALYSIS_ORDER) >= _ANALYSIS_MAX:
+        _ANALYSIS_CACHE.pop(_ANALYSIS_ORDER.pop(0), None)
+    _ANALYSIS_CACHE[key] = entry
+    _ANALYSIS_ORDER.append(key)
+
+
+def _analysis_payload(entry: dict, cached: bool) -> dict:
+    a = entry["analysis"]
+    return {
+        "analysis_id": entry["key"],
+        "cached": cached,
+        "dims": a["dims"],
+        "full_dims": entry["full_dims"],
+        "craters": a["craters"],
+        "crater_diagnostics": a["crater_diagnostics"],
+        "shadow": a["shadow"],
+        "hazard": a["hazard"],
+        "overlays": a["overlays"],
+        "params": a["params"],
+        "evidence_legend": T.EVIDENCE_LEGEND,
+        "no_hallucination": T.NO_HALLUCINATION,
+        "note": (
+            "Classical image analysis only (no AI). Depths/slopes are "
+            "image-derived estimates — never true depth without elevation "
+            "data. Dark pixels are candidate shadow regions, not confirmed PSRs."
+        ),
+    }
+
+
+@app.post("/api/analyze")
+async def analyze(
+    file: UploadFile = File(...),
+    canny_lo: str = Form("50"),
+    canny_hi: str = Form("150"),
+    hough_acc: str = Form("30"),
+    min_r: str = Form("12"),
+    max_r: str = Form("200"),
+    min_circ: str = Form("0.55"),
+    w_slope: str = Form("0.35"),
+    w_rough: str = Form("0.25"),
+    w_bound: str = Form("0.25"),
+    w_unc: str = Form("0.15"),
+):
+    """Classical terrain analysis on the (already enhanced) image."""
+    ext = _ext_of(file.filename)
+    if not ext:
+        ext = MIME_TO_EXT.get((file.content_type or "").lower(), "")
+    if ext not in ALLOWED_EXTS:
+        return JSONResponse(status_code=400, content={"detail": ERROR_FORMAT})
+
+    raw = await file.read()
+    if not raw:
+        return JSONResponse(
+            status_code=400,
+            content={"detail": "Empty file. Please upload a valid lunar image."},
+        )
+    if len(raw) > MAX_BYTES:
+        return JSONResponse(
+            status_code=413,
+            content={"detail": "File exceeds 50 MB limit."},
+        )
+
+    try:
+        img = Image.open(io.BytesIO(raw))
+        img.load()
+    except Exception:
+        return JSONResponse(
+            status_code=400,
+            content={
+                "detail": "Corrupt or unreadable image file. "
+                "Please try another file."
+            },
+        )
+    if (img.format or "").upper() not in ALLOWED_PIL_FORMATS:
+        return JSONResponse(status_code=400, content={"detail": ERROR_FORMAT})
+
+    params = {
+        "canny_lo": _as_int(canny_lo, 50, 10, 400),
+        "canny_hi": _as_int(canny_hi, 150, 20, 600),
+        "hough_acc": _as_int(hough_acc, 30, 10, 200),
+        "min_r": _as_int(min_r, 12, 6, 400),
+        "max_r": _as_int(max_r, 200, 12, 600),
+        "min_circ": _as_float(min_circ, 0.55, 0.1, 1.0),
+        "w_slope": _as_float(w_slope, 0.35, 0.0, 1.0),
+        "w_rough": _as_float(w_rough, 0.25, 0.0, 1.0),
+        "w_bound": _as_float(w_bound, 0.25, 0.0, 1.0),
+        "w_unc": _as_float(w_unc, 0.15, 0.0, 1.0),
+    }
+    if params["min_r"] >= params["max_r"]:
+        params["max_r"] = params["min_r"] + 4
+    if params["canny_lo"] >= params["canny_hi"]:
+        params["canny_hi"] = params["canny_lo"] + 10
+
+    key = hashlib.sha256(
+        raw + repr(sorted(params.items())).encode("utf-8")
+    ).hexdigest()[:32]
+    hit = _analysis_cache_get(key)
+    if hit is not None:
+        return _analysis_payload(hit, cached=True)
+
+    try:
+        bgr, full_dims = T.pil_to_bgr(img, ANALYSIS_DIM)
+        analysis = T.analyze_image(bgr, **params)
+    except Exception:
+        return JSONResponse(
+            status_code=500,
+            content={"detail": "Terrain analysis failed. Please try another image."},
+        )
+    entry = {
+        "key": key,
+        "analysis": analysis,
+        "full_dims": full_dims,
+        "bgr": bgr,
+    }
+    _analysis_cache_put(key, entry)
+    return _analysis_payload(entry, cached=False)
+
+
+class RouteRequest(BaseModel):
+    analysis_id: str
+    start: list  # [nx, ny] normalized 0..1 in analysis dims
+    target: list  # [nx, ny] normalized 0..1 in analysis dims
+    mode: str = "balanced"  # shortest | safest | balanced
+    algorithm: str = "astar"  # astar | dijkstra
+    caution: float = 1.0
+
+
+@app.post("/api/route")
+def route(body: RouteRequest):
+    """A*/Dijkstra rover route on cached analysis rasters."""
+    entry = _analysis_cache_get((body.analysis_id or "").strip())
+    if entry is None:
+        return JSONResponse(
+            status_code=404,
+            content={"detail": "Analysis expired - please re-run Analyze terrain."},
+        )
+    try:
+        sx, sy = float(body.start[0]), float(body.start[1])
+        tx, ty = float(body.target[0]), float(body.target[1])
+    except (TypeError, IndexError, ValueError):
+        return JSONResponse(
+            status_code=400,
+            content={"detail": "Start/target must be [x, y] normalized coordinates."},
+        )
+    if not all(0.0 <= v <= 1.0 for v in (sx, sy, tx, ty)):
+        return JSONResponse(
+            status_code=400,
+            content={"detail": "Coordinates must be within 0..1."},
+        )
+    mode = (body.mode or "balanced").lower()
+    if mode not in ("shortest", "safest", "balanced"):
+        mode = "balanced"
+    algo = (body.algorithm or "astar").lower()
+    if algo not in ("astar", "dijkstra"):
+        algo = "astar"
+    try:
+        caution = min(3.0, max(0.0, float(body.caution)))
+    except (TypeError, ValueError):
+        caution = 1.0
+
+    dims = entry["analysis"]["dims"]
+    start = (sx * dims["w"], sy * dims["h"])
+    target = (tx * dims["w"], ty * dims["h"])
+    rasters = entry["analysis"]["_rasters"]
+    try:
+        result = T.plan_route(
+            rasters["haz_score"], rasters["shadow_cls"], rasters["haz_class"],
+            start, target, mode, caution, algo,
+        )
+    except Exception:
+        return JSONResponse(
+            status_code=500,
+            content={"detail": "Route planning failed. Please try other points."},
+        )
+    if not result.get("found"):
+        return {
+            "found": False,
+            "reason": result.get("reason", "No route found."),
+            "pops": result.get("pops", 0),
+        }
+    try:
+        overlay = T._b64_png(T.draw_route(entry["bgr"], result, start, target))
+    except Exception:
+        return JSONResponse(
+            status_code=500,
+            content={"detail": "Route overlay failed. Please try other points."},
+        )
+    result["overlay"] = overlay
+    result["dims"] = dims
+    result["no_hallucination"] = T.NO_HALLUCINATION
+    return result

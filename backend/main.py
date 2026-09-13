@@ -16,6 +16,7 @@ Metrics are computed original-vs-enhanced on luminance for transparency.
 import base64
 import hashlib
 import io
+import os
 
 import cv2
 import numpy as np
@@ -70,6 +71,14 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:5173",
         "http://127.0.0.1:5173",
+        "https://bys-exe.github.io",
+        # Extra frontend origins (e.g. your Vercel domain) via env:
+        # CORS_EXTRA_ORIGINS=https://psr-moon.vercel.app,https://...
+        *[
+            o.strip()
+            for o in os.environ.get("CORS_EXTRA_ORIGINS", "").split(",")
+            if o.strip()
+        ],
     ],
     allow_credentials=True,
     allow_methods=["*"],

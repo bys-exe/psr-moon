@@ -11,6 +11,13 @@ const BACKEND_OFFLINE =
 const FORMAT_ERROR =
   'Unsupported format. Please upload JPG, JPEG, PNG, TIFF, or WEBP (50 MB max).'
 
+// Backend URL. Local dev: '' (uses Vite '/api' proxy).
+// Static hosts (GitHub Pages / Vercel): set VITE_API_URL to your hosted
+// FastAPI URL (static hosts can't run Python),
+// e.g. https://psr-moon.onrender.com
+const API_BASE = (import.meta.env.VITE_API_URL || '').replace(/\/$/, '')
+const api = (path) => `${API_BASE}${path}`
+
 function VisHistogram({ before, after }) {
   const W = 280
   const H = 110
@@ -311,7 +318,7 @@ export default function App() {
 
   async function postEnhance(form) {
     try {
-      return await fetch('/api/enhance', { method: 'POST', body: form })
+      return await fetch(api('/api/enhance'), { method: 'POST', body: form })
     } catch (proxyErr) {
       // Dev fallback when Vite proxy is bypassed (e.g. preview build).
       const retry = new FormData()
@@ -413,7 +420,7 @@ export default function App() {
       form.append('max_r', '200')
       let res
       try {
-        res = await fetch('/api/analyze', { method: 'POST', body: form })
+        res = await fetch(api('/api/analyze'), { method: 'POST', body: form })
       } catch (proxyErr) {
         const retry = new FormData()
         for (const [k, v] of form.entries()) retry.append(k, v)
@@ -465,7 +472,7 @@ export default function App() {
     try {
       let res
       try {
-        res = await fetch('/api/route', {
+        res = await fetch(api('/api/route'), {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body,
@@ -559,7 +566,7 @@ export default function App() {
     try {
       let res
       try {
-        res = await fetch('/api/library')
+        res = await fetch(api('/api/library'))
       } catch (proxyErr) {
         try {
           res = await fetch('http://127.0.0.1:8000/api/library')
@@ -585,7 +592,7 @@ export default function App() {
       const body = JSON.stringify({ id: item.id })
       let res
       try {
-        res = await fetch('/api/library/enhance', {
+        res = await fetch(api('/api/library/enhance'), {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body,
@@ -645,7 +652,7 @@ export default function App() {
       {bgVideoOk && (
         <video
           className="bg-video"
-          src="/deep-space-nebula-moewalls-com.mp4"
+          src={`${import.meta.env.BASE_URL}deep-space-nebula-moewalls-com.mp4`}
           autoPlay
           muted
           loop
@@ -1906,7 +1913,9 @@ export default function App() {
                     <div className="btn-row">
                       <a
                         className="btn-link"
-                        href={`/api/library/compare?id=${encodeURIComponent(libSelected.id)}`}
+                        href={api(
+                          `/api/library/compare?id=${encodeURIComponent(libSelected.id)}`,
+                        )}
                         download={`lunaris-${libSelected.id}-compare.png`}
                       >
                         Export comparison PNG
